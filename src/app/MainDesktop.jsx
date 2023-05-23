@@ -1,5 +1,6 @@
 import React from "react";
 import Welcome from "./windows/Welcome.jsx";
+//why the fuck isnt it using the new window page on main in vercel
 
 export default function MainDesktop() {
   return (
