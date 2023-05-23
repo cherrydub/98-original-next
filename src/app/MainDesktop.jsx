@@ -1,5 +1,5 @@
 import React from "react";
-import Welcome from "./windows/welcome";
+import Welcome from "./windows/welcome.jsx";
 
 export default function MainDesktop() {
   return (
