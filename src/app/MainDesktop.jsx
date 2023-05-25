@@ -4,7 +4,7 @@ import Welcome from "./windows/Welcome.jsx";
 
 export default function MainDesktop() {
   return (
-    <div className="ml-14 mb-6 border border-amber-600">
+    <div className="ml-14 mb-6">
       <p>testing</p>
       <Welcome />
       <p>testing</p>
@@ -27,23 +27,6 @@ export default function MainDesktop() {
           <p>There's so much room for activities!</p>
         </div>
       </div>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
-      <p>testing</p>
       <p>testing</p>
       <p>testing</p>
       <p>testing</p>

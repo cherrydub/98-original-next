@@ -3,7 +3,7 @@ import "98.css";
 
 export const metadata = {
   title: "cherrydub",
-  description: "welcome to the past",
+  description: "my homepage",
 };
 
 export default function RootLayout({ children }) {
