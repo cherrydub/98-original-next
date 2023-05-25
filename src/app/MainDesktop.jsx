@@ -16,11 +16,11 @@ export default function MainDesktop() {
       <p>testing</p>
       <div className="window" style={{ width: "300px" }}>
         <div className="title-bar">
-          <div class="title-bar-text">A Window With Stuff In It</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
+          <div className="title-bar-text">A Window With Stuff In It</div>
+          <div className="title-bar-controls">
+            <button className="bg-gray-300" aria-label="Minimize"></button>
+            <button className="bg-gray-300" aria-label="Maximize"></button>
+            <button className="bg-gray-300" aria-label="Close"></button>
           </div>
         </div>
         <div class="window-body">
