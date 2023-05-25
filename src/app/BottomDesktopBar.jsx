@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+// import { useClient } from "next/client";
+// useClient();
+import LocalTime from "./components/LocalTime";
 
 export default function BottomDesktopBar() {
+  const [count, setCount] = useState(0);
   return (
     <div className="start-bar flex">
       <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center">
@@ -12,7 +16,7 @@ export default function BottomDesktopBar() {
       </div>
       <div className="flex-auto mx-2">testing</div>
       <div className="start-bar-time flex-initial text-center justify-center items-center">
-        04:20 PM
+        <LocalTime />
       </div>
     </div>
   );
