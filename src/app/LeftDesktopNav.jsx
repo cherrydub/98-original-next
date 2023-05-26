@@ -56,18 +56,18 @@ export default function LeftDesktopNav() {
           // onClick={() => {
           //   setWindowDisplayed("Counter");
           // }}
-          src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png"
+          src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png"
           alt="folder"
           width={"28px"}
         />
-        <p className="">Counter</p>
+        <p className="">Memes</p>
       </div>
       <div className="mb-2 text-center flex flex-col items-center">
         <img
           // onClick={() => {
           //   setWindowDisplayed("Counter");
           // }}
-          src="https://win98icons.alexmeub.com/icons/png/world-4.png"
+          src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
           alt="website"
           width={"28px"}
         />

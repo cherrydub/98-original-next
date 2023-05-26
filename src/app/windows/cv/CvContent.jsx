@@ -1,5 +1,16 @@
 import React from "react";
 
 export default function CvContent() {
-  return <div>testing</div>;
+  return (
+    // <div className="w-full h-full">
+    <div className="bg-white">
+      <iframe
+        className="w-full h-full"
+        src="/cv/cv.html"
+        frameborder="0"
+        style={{ height: "420px" }}
+      />
+    </div>
+    // </div>
+  );
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import ProjectsContent from "./ProjectsContent";
+import MemesContent from "./MemesContent";
 
-export default function Projects() {
+export default function Memes() {
   return (
     <>
       <div className="window inline-flex flex-col">
         <div className="title-bar">
-          <div className="title-bar-text">Projects</div>
+          <div className="title-bar-text">Memes</div>
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
@@ -15,7 +15,7 @@ export default function Projects() {
         </div>
         <div className="window-body">
           <div className="bg-white">
-            <ProjectsContent />
+            <MemesContent />
           </div>
         </div>
       </div>
