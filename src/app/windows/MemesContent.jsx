@@ -14,14 +14,15 @@ export default function MemesContent() {
 
   return (
     <div className="flex flex-wrap p-4 gap-4">
-      {fileNames.map((file) => {
+      test
+      {/* {fileNames.map((file) => {
         return (
           <div className="flex flex-col items-center">
             <img src={file.path} alt={file.text} />
             <div className="text-center">{file.text}</div>
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 }
