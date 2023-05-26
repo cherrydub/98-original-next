@@ -7,7 +7,7 @@ export default function CvContent() {
       <iframe
         className="w-full h-full"
         src="/cv/cv.html"
-        frameborder="0"
+        frameBorder="0"
         style={{ height: "420px" }}
       />
     </div>

@@ -7,19 +7,10 @@ export default function MemesContent() {
     // { path: "./memes/2.png", text: "two" },
   ];
 
-  //   fileListPromise
-  //     .then((result) => {
-  //       fileNames.push(result);
-  //       // Use the file list array here
-  //     })
-  //     .catch((err) => {
-  //       console.error("Error:", err);
-  //     });
-
-  for (let index = 1; index <= 2; index++) {
-    // const element = array[index];
-    fileNames.push({ path: `./memes/${index}.png`, text: `${index}` });
-  }
+  //   for (let index = 1; index <= 2; index++) {
+  //     // const element = array[index];
+  //     fileNames.push({ path: `./memes/${index}.png`, text: `${index}` });
+  //   }
 
   return (
     <div className="flex flex-wrap p-4 gap-4">
