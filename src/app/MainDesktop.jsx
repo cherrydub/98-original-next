@@ -1,8 +1,9 @@
 import React from "react";
 
-import CvWindow from "./windows/cv/CvWindow.jsx";
+import CvWindow from "./windows/CvWindow.jsx";
 import Projects from "./windows/Projects.jsx";
 import Memes from "./windows/Memes.jsx";
+import Todo from "./windows/Todo.jsx";
 
 export default function MainDesktop() {
   return (
@@ -16,6 +17,7 @@ export default function MainDesktop() {
       <Projects />
       <p>testing</p>
       <p>testing</p>
+      <Todo />
       <p>testing</p>
       <CvWindow />
       <p>testing</p>

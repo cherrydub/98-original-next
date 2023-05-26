@@ -24,12 +24,13 @@ export default function LeftDesktopNav() {
         />
         <p className="">Projects</p>
       </div>
+
       <div className="mb-2 text-center flex flex-col items-center">
         <img
           // onClick={() => {
           //   setWindowDisplayed("Cv");
           // }}
-          src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
+          src="https://win98icons.alexmeub.com/icons/png/message_file-0.png"
           alt="cv"
           width={"28px"}
         />
@@ -83,6 +84,17 @@ export default function LeftDesktopNav() {
           width={"28px"}
         />
         <p className="">E-mail</p>
+      </div>
+      <div className="mb-2 text-center flex flex-col items-center">
+        <img
+          // onClick={() => {
+          //   setWindowDisplayed("Cv");
+          // }}
+          src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
+          alt="cv"
+          width={"28px"}
+        />
+        <p className="">Todo</p>
       </div>
     </div>
   );
