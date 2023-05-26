@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 
 export default function TodoContent() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([
+    "finish memes dynamic listing",
+    "make contact page",
+    "add btc/eth pricing",
+    "update window states",
+    "make window components",
+  ]);
   const [newTask, setNewTask] = useState("");
 
   const handleAddTask = (e) => {
@@ -21,7 +27,6 @@ export default function TodoContent() {
   return (
     <>
       <div className="flex flex-col flex-wrap p-4 gap-4">
-        {/* <div className="font-bold">Todo List:</div> */}
         <div>
           <ol className="pl-5 list-disc">
             {tasks.map((task, index) => (
