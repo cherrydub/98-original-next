@@ -64,15 +64,17 @@ export default function LeftDesktopNav() {
         <p className="">Memes</p>
       </div>
       <div className="mb-2 text-center flex flex-col items-center">
-        <img
-          // onClick={() => {
-          //   setWindowDisplayed("Counter");
-          // }}
-          src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
-          alt="website"
-          width={"28px"}
-        />
-        <p className="">Website</p>
+        <a href="https://github.com/cherrydub" target="_blank">
+          <img
+            // onClick={() => {
+            //   setWindowDisplayed("Counter");
+            // }}
+            src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
+            alt="website"
+            width={"28px"}
+          />
+          <p className="">GitHub</p>
+        </a>
       </div>
       <div className="mb-2 text-center flex flex-col items-center">
         <img
@@ -83,7 +85,7 @@ export default function LeftDesktopNav() {
           alt="email"
           width={"28px"}
         />
-        <p className="">E-mail</p>
+        <p className="">Contact</p>
       </div>
       <div className="mb-2 text-center flex flex-col items-center">
         <img

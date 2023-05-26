@@ -13,62 +13,61 @@ export default function ProjectsContent() {
         </div>
       </a>
 
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Pokedex</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Blocklist</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Smart Brain</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Pokedex</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Blocklist</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Smart Brain</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Pokedex</div>
-      </div>
-      <div className="flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/html-5.png"
-          alt=""
-        />
-        <div className="text-center">Blocklist</div>
-      </div>
+      <a target="_blank" href="https://pokedex.cherrydub.com/">
+        <div className="flex flex-col items-center">
+          <img
+            src="https://win98icons.alexmeub.com/icons/png/html-5.png"
+            alt=""
+          />
+          <div className="text-center">Pokedex</div>
+        </div>
+      </a>
+
+      <a
+        target="_blank"
+        href="https://northcoders.com/projects/may-2023/blocklist"
+      >
+        <div className="flex flex-col items-center">
+          <img
+            src="https://win98icons.alexmeub.com/icons/png/html-5.png"
+            alt=""
+          />
+          <div className="text-center">Blocklist</div>
+        </div>
+      </a>
+
+      <a target="_blank" href="https://smartbrain.cherrydub.com/">
+        <div className="flex flex-col items-center">
+          <img
+            src="https://win98icons.alexmeub.com/icons/png/html-5.png"
+            alt=""
+          />
+          <div className="text-center">Smart Brain</div>
+        </div>
+      </a>
+
+      <a target="_blank" href="https://pokedex.cherrydub.com/">
+        <div className="flex flex-col items-center">
+          <img
+            src="https://win98icons.alexmeub.com/icons/png/html-5.png"
+            alt=""
+          />
+          <div className="text-center">Pokedex</div>
+        </div>
+      </a>
+
+      <a
+        target="_blank"
+        href="https://northcoders.com/projects/may-2023/blocklist"
+      >
+        <div className="flex flex-col items-center">
+          <img
+            src="https://win98icons.alexmeub.com/icons/png/html-5.png"
+            alt=""
+          />
+          <div className="text-center">Blocklist</div>
+        </div>
+      </a>
     </div>
   );
 }
