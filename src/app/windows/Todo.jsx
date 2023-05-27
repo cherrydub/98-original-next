@@ -20,7 +20,7 @@ export default function Todo() {
           </div>
         </div>
         <div className="window-body">
-          <div className="bg-white">
+          <div className="bg-white font-bold">
             <TodoContent />
           </div>
         </div>
