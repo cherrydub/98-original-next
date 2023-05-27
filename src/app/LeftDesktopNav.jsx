@@ -52,21 +52,19 @@ export default function LeftDesktopNav({
         />
         <p className="">CV</p>
       </div>
-      <div className="mb-2 text-center flex flex-col items-center">
+
+      <div
+        className={`mb-2 text-center flex flex-col items-center ${
+          activeComponents.includes("Todo") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Todo")}
+      >
         <img
-          src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-4.png"
-          alt="other"
+          src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
+          alt="todo"
           width={"28px"}
         />
-        <p className="">Other</p>
-      </div>
-      <div className="mb-2 text-center flex flex-col items-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png"
-          alt="misc"
-          width={"28px"}
-        />
-        <p className="">Misc</p>
+        <p className="">Todo</p>
       </div>
 
       <div
@@ -96,6 +94,24 @@ export default function LeftDesktopNav({
           <p className="">GitHub</p>
         </a>
       </div>
+
+      <div className="mb-2 text-center flex flex-col items-center">
+        <img
+          src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-4.png"
+          alt="other"
+          width={"28px"}
+        />
+        <p className="">Other</p>
+      </div>
+      <div className="mb-2 text-center flex flex-col items-center">
+        <img
+          src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png"
+          alt="misc"
+          width={"28px"}
+        />
+        <p className="">Misc</p>
+      </div>
+
       <div className="mb-2 text-center flex flex-col items-center">
         <img
           // onClick={() => {
@@ -106,20 +122,6 @@ export default function LeftDesktopNav({
           width={"28px"}
         />
         <p className="">Contact</p>
-      </div>
-
-      <div
-        className={`mb-2 text-center flex flex-col items-center ${
-          activeComponents.includes("Todo") ? "active" : ""
-        }`}
-        onClick={() => handleLinkClick("Todo")}
-      >
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
-          alt="todo"
-          width={"28px"}
-        />
-        <p className="">Todo</p>
       </div>
     </div>
   );
