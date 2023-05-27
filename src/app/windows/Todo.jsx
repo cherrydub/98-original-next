@@ -8,7 +8,7 @@ export default function Todo() {
         <div className="title-bar">
           <div className="title-bar-text flex">
             <img
-              src="https://win98icons.alexmeub.com/icons/png/message_file-1.png"
+              src="https://win98icons.alexmeub.com/icons/png/notepad-3.png"
               alt=""
             />
             Todo
