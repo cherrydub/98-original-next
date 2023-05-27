@@ -7,19 +7,28 @@ import Todo from "./windows/Todo.jsx";
 
 export default function MainDesktop({ activeComponents }) {
   return (
-    <div className="ml-14 mb-6">
-      <div className="">
+    <div className="ml-14">
+      <div className="mb-8 mt-4">
+        {/* <div className="mb-8 mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> */}
         {activeComponents.map((componentName) => {
+          let component = null;
+
           switch (componentName) {
             case "Projects":
-              return <Projects key={componentName} />;
+              component = <Projects key={componentName} />;
+              break;
             case "Cv":
-              return <CvWindow key={componentName} />;
+              component = <CvWindow key={componentName} />;
+              break;
             case "Todo":
-              return <Todo key={componentName} />;
+              component = <Todo key={componentName} />;
+              break;
             default:
-              return <Memes key={componentName} />;
+              component = <Memes key={componentName} />;
+              break;
           }
+
+          return <div key={componentName}>{component}</div>;
         })}
       </div>
     </div>

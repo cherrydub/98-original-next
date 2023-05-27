@@ -3,7 +3,8 @@ import MemesContent from "./MemesContent";
 
 export default function Memes() {
   return (
-    <div className="flex justify-center">
+    <div className="">
+      {/* <div className="flex justify-center"> */}
       <div className="window inline-flex flex-col">
         <div className="title-bar">
           <div className="title-bar-text flex">

@@ -3,7 +3,8 @@ import CvContent from "./CvContent";
 
 export default function CvWindow() {
   return (
-    <div className="flex justify-center">
+    <div className="">
+      {/* <div className="flex justify-center"> */}
       <div
         className="window flex-col w-auto h-auto"
         style={{ minWidth: "80%", maxWidth: "100%" }}
