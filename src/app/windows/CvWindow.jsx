@@ -6,7 +6,7 @@ export default function CvWindow() {
     <div className="flex justify-center">
       <div
         className="window flex-col w-auto h-auto"
-        style={{ minWidth: "80%", maxWidth: "auto" }}
+        style={{ minWidth: "80%", maxWidth: "100%" }}
       >
         <div className="title-bar">
           <div className="title-bar-text flex">
