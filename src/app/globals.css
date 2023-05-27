@@ -71,6 +71,23 @@ body {
   padding-right: 4px;
 }
 
+.start-bar-tabs {
+  /* vertical-align: middle; */
+  height: 18px;
+  line-height: 18px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  font-family: Arial;
+  font-weight: 400;
+  color: #000;
+  font-size: 9px;
+  padding-left: 4px;
+  padding-right: 4px;
+  max-width: 100px;
+}
+
 /* .bottom-start-bar {
   background-color: rgb(192, 192, 192);
   border: 1px solid;

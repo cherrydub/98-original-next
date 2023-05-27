@@ -1,9 +1,7 @@
 import React from "react";
-// import { useClient } from "next/client";
-// useClient();
 import LocalTime from "./components/LocalTime";
 
-export default function BottomDesktopBar() {
+export default function BottomDesktopBar({ activeComponents }) {
   return (
     <div className="start-bar flex">
       <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center">
@@ -13,7 +11,18 @@ export default function BottomDesktopBar() {
           alt=""
         />
       </div>
-      <div className="flex-auto mx-2">testing</div>
+      <div className="flex-auto mx-2 flex">
+        {activeComponents.map((window) => {
+          return (
+            <div
+              className="start-bar-tabs flex-auto text-center justify-center items-center"
+              key={window}
+            >
+              {window}
+            </div>
+          );
+        })}
+      </div>
       <div className="start-bar-time flex-initial text-center justify-center items-center">
         <LocalTime />
       </div>

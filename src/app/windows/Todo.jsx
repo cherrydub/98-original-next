@@ -3,10 +3,16 @@ import TodoContent from "./TodoContent";
 
 export default function Todo() {
   return (
-    <>
+    <div className="">
       <div className="window inline-flex flex-col">
         <div className="title-bar">
-          <div className="title-bar-text">Todo List</div>
+          <div className="title-bar-text flex">
+            <img
+              src="https://win98icons.alexmeub.com/icons/png/message_file-1.png"
+              alt=""
+            />
+            Todo
+          </div>
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
@@ -19,6 +25,6 @@ export default function Todo() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

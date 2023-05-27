@@ -4,7 +4,7 @@ export default function CvContent() {
   return (
     // <div className="w-full h-full">
     <div className="bg-white">
-      <iframe
+      <embed
         className="w-full h-full"
         src="/cv/cv2.html"
         frameBorder="0"

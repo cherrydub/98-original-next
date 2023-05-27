@@ -1,6 +1,17 @@
 import React from "react";
-
-export default function LeftDesktopNav() {
+//backup till here
+export default function LeftDesktopNav({
+  activeComponents,
+  addActiveComponent,
+  removeActiveComponent,
+}) {
+  const handleLinkClick = (componentName) => {
+    if (activeComponents.includes(componentName)) {
+      removeActiveComponent(componentName);
+    } else {
+      addActiveComponent(componentName);
+    }
+  };
   return (
     <div className="navigation-desktop fixed left-3 top-5 space-y-3 text-white">
       <div className="mb-2 text-center flex flex-col items-center">
@@ -13,11 +24,13 @@ export default function LeftDesktopNav() {
           <p className="">Home</p>
         </a>
       </div>
-      <div className="mb-2 text-center flex flex-col items-center">
+      <div
+        className={`mb-2 text-center flex flex-col items-center ${
+          activeComponents.includes("Projects") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Projects")}
+      >
         <img
-          // onClick={() => {
-          //   setWindowDisplayed("Projects");
-          // }}
           src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png"
           alt="projects"
           width={"28px"}
@@ -25,11 +38,14 @@ export default function LeftDesktopNav() {
         <p className="">Projects</p>
       </div>
 
-      <div className="mb-2 text-center flex flex-col items-center">
+      {/* CV Link */}
+      <div
+        className={`mb-2 text-center flex flex-col items-center ${
+          activeComponents.includes("Cv") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Cv")}
+      >
         <img
-          // onClick={() => {
-          //   setWindowDisplayed("Cv");
-          // }}
           src="https://win98icons.alexmeub.com/icons/png/message_file-0.png"
           alt="cv"
           width={"28px"}
@@ -52,17 +68,21 @@ export default function LeftDesktopNav() {
         />
         <p className="">Misc</p>
       </div>
-      <div className="mb-2 text-center flex flex-col items-center">
+
+      <div
+        className={`mb-2 text-center flex flex-col items-center ${
+          activeComponents.includes("Memes") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Memes")}
+      >
         <img
-          // onClick={() => {
-          //   setWindowDisplayed("Counter");
-          // }}
           src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png"
-          alt="folder"
+          alt="memes"
           width={"28px"}
         />
         <p className="">Memes</p>
       </div>
+
       <div className="mb-2 text-center flex flex-col items-center">
         <a href="https://github.com/cherrydub" target="_blank">
           <img
@@ -87,13 +107,16 @@ export default function LeftDesktopNav() {
         />
         <p className="">Contact</p>
       </div>
-      <div className="mb-2 text-center flex flex-col items-center">
+
+      <div
+        className={`mb-2 text-center flex flex-col items-center ${
+          activeComponents.includes("Todo") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Todo")}
+      >
         <img
-          // onClick={() => {
-          //   setWindowDisplayed("Cv");
-          // }}
           src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
-          alt="cv"
+          alt="todo"
           width={"28px"}
         />
         <p className="">Todo</p>

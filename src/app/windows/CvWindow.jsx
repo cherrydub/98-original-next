@@ -3,13 +3,19 @@ import CvContent from "./CvContent";
 
 export default function CvWindow() {
   return (
-    <>
+    <div className="flex justify-center">
       <div
         className="window flex-col w-auto h-auto"
-        style={{ maxWidth: "800px" }}
+        style={{ minWidth: "80%", maxWidth: "auto" }}
       >
         <div className="title-bar">
-          <div className="title-bar-text">CV</div>
+          <div className="title-bar-text flex">
+            <img
+              src="https://win98icons.alexmeub.com/icons/png/notepad-3.png"
+              alt=""
+            />
+            CV
+          </div>
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
@@ -20,6 +26,6 @@ export default function CvWindow() {
           <CvContent />
         </div>
       </div>
-    </>
+    </div>
   );
 }
