@@ -26,6 +26,7 @@ export default function MainDesktop({
               component = (
                 <Projects
                   key={componentName}
+                  activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
                 />
               );
@@ -34,6 +35,7 @@ export default function MainDesktop({
               component = (
                 <Cv
                   key={componentName}
+                  activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
                 />
               );
@@ -42,6 +44,7 @@ export default function MainDesktop({
               component = (
                 <Todo
                   key={componentName}
+                  activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
                 />
               );
@@ -50,6 +53,7 @@ export default function MainDesktop({
               component = (
                 <Memes
                   key={componentName}
+                  activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
                 />
               );
@@ -62,7 +66,10 @@ export default function MainDesktop({
               onClick={() => handleLinkClick(componentName)}
               //commenting out the classname and style, this would then make them stack ontop of eachother
               className="absolute"
-              style={{ zIndex: activeComponents.length - index }}
+              style={{
+                zIndex: activeComponents.length - index,
+                // marginTop: activeComponents.length * activeComponents.length,
+              }}
             >
               {component}
             </div>

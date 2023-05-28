@@ -1,17 +1,21 @@
 import React from "react";
 import TodoContent from "./TodoContent";
 
-export default function Todo({ removeActiveComponent }) {
+export default function Todo({ activeComponents, removeActiveComponent }) {
   const handleLinkClick = (event) => {
     //this prevents any background event clickers to work, such as removing and readding the active component
     event.stopPropagation();
     removeActiveComponent("Todo");
   };
 
+  const isActive =
+    (activeComponents ?? []).length > 0 && activeComponents[0] === "Todo";
+  const titleBarClassName = `title-bar${isActive ? "" : " inactive"}`;
+
   return (
     <div className="">
       <div className="window inline-flex flex-col">
-        <div className="title-bar">
+        <div className={titleBarClassName}>
           <div className="title-bar-text flex">
             <img
               src="https://win98icons.alexmeub.com/icons/png/notepad-3.png"
