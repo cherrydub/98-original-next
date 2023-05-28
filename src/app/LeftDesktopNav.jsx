@@ -8,6 +8,7 @@ export default function LeftDesktopNav({
   const handleLinkClick = (componentName) => {
     if (activeComponents.includes(componentName)) {
       removeActiveComponent(componentName);
+      addActiveComponent(componentName);
     } else {
       addActiveComponent(componentName);
     }

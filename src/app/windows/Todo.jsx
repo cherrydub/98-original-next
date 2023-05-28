@@ -1,7 +1,13 @@
 import React from "react";
 import TodoContent from "./TodoContent";
 
-export default function Todo() {
+export default function Todo({ removeActiveComponent }) {
+  const handleLinkClick = (event) => {
+    //this prevents any background event clickers to work, such as removing and readding the active component
+    event.stopPropagation();
+    removeActiveComponent("Todo");
+  };
+
   return (
     <div className="">
       <div className="window inline-flex flex-col">
@@ -16,7 +22,11 @@ export default function Todo() {
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
-            <button className="bg-gray-300" aria-label="Close"></button>
+            <button
+              onClick={handleLinkClick}
+              className="bg-gray-300"
+              aria-label="Close"
+            ></button>
           </div>
         </div>
         <div className="window-body">

@@ -1,7 +1,12 @@
 import React from "react";
 import MemesContent from "./MemesContent";
 
-export default function Memes() {
+export default function Memes({ removeActiveComponent }) {
+  const handleLinkClick = (event) => {
+    //this prevents any background event clickers to work, such as removing and readding the active component
+    event.stopPropagation();
+    removeActiveComponent("Memes");
+  };
   return (
     <div className="">
       {/* <div className="flex justify-center"> */}
@@ -17,7 +22,11 @@ export default function Memes() {
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
-            <button className="bg-gray-300" aria-label="Close"></button>
+            <button
+              onClick={handleLinkClick}
+              className="bg-gray-300"
+              aria-label="Close"
+            ></button>
           </div>
         </div>
         <div className="window-body">

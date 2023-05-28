@@ -1,7 +1,12 @@
 import React from "react";
 import ProjectsContent from "./ProjectsContent";
 
-export default function Projects() {
+export default function Projects({ removeActiveComponent }) {
+  const handleLinkClick = (event) => {
+    //this prevents any background event clickers to work, such as removing and readding the active component
+    event.stopPropagation();
+    removeActiveComponent("Projects");
+  };
   return (
     <div className="">
       <div className="window inline-flex flex-col">
@@ -16,7 +21,11 @@ export default function Projects() {
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
-            <button className="bg-gray-300" aria-label="Close"></button>
+            <button
+              onClick={handleLinkClick}
+              className="bg-gray-300"
+              aria-label="Close"
+            ></button>
           </div>
         </div>
         <div className="window-body">

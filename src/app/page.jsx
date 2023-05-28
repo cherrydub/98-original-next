@@ -8,6 +8,7 @@ export default function Home() {
   const [activeComponents, setActiveComponents] = useState([]);
 
   const addActiveComponent = (componentName) => {
+    console.log("added: ", componentName);
     setActiveComponents((prevActiveComponents) => [
       componentName,
       ...prevActiveComponents.filter((name) => name !== componentName),
@@ -15,19 +16,26 @@ export default function Home() {
   };
 
   const removeActiveComponent = (componentName) => {
+    console.log("removed:", componentName);
     setActiveComponents((prevActiveComponents) =>
       prevActiveComponents.filter((name) => name !== componentName)
     );
   };
   return (
-    <>
+    <div className="">
       <LeftDesktopNav
         activeComponents={activeComponents}
         addActiveComponent={addActiveComponent}
         removeActiveComponent={removeActiveComponent}
       />
-      <MainDesktop activeComponents={activeComponents} />
+      <MainDesktop
+        activeComponents={activeComponents}
+        addActiveComponent={addActiveComponent}
+        removeActiveComponent={removeActiveComponent}
+      />
       <BottomDesktopBar activeComponents={activeComponents} />
-    </>
+
+      {console.log(activeComponents)}
+    </div>
   );
 }

@@ -1,34 +1,72 @@
 import React from "react";
 //backup till here
-import CvWindow from "./windows/CvWindow.jsx";
+import Cv from "./windows/Cv.jsx";
 import Projects from "./windows/Projects.jsx";
 import Memes from "./windows/Memes.jsx";
 import Todo from "./windows/Todo.jsx";
 
-export default function MainDesktop({ activeComponents }) {
+export default function MainDesktop({
+  activeComponents,
+  removeActiveComponent,
+  addActiveComponent,
+}) {
+  const handleLinkClick = (componentName) => {
+    removeActiveComponent(componentName);
+    addActiveComponent(componentName);
+  };
   return (
     <div className="ml-14">
       <div className="mb-8 mt-4">
         {/* <div className="mb-8 mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> */}
-        {activeComponents.map((componentName) => {
+        {activeComponents.map((componentName, index) => {
           let component = null;
 
           switch (componentName) {
             case "Projects":
-              component = <Projects key={componentName} />;
+              component = (
+                <Projects
+                  key={componentName}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
               break;
             case "Cv":
-              component = <CvWindow key={componentName} />;
+              component = (
+                <Cv
+                  key={componentName}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
               break;
             case "Todo":
-              component = <Todo key={componentName} />;
+              component = (
+                <Todo
+                  key={componentName}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
               break;
             default:
-              component = <Memes key={componentName} />;
+              component = (
+                <Memes
+                  key={componentName}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
               break;
           }
 
-          return <div key={componentName}>{component}</div>;
+          return (
+            <div
+              key={componentName}
+              onClick={() => handleLinkClick(componentName)}
+              //commenting out the classname and style, this would then make them stack ontop of eachother
+              className="absolute"
+              style={{ zIndex: activeComponents.length - index }}
+            >
+              {component}
+            </div>
+          );
         })}
       </div>
     </div>
