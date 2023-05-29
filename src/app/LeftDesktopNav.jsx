@@ -82,6 +82,20 @@ export default function LeftDesktopNav({
         <p className="">Memes</p>
       </div>
 
+      <div
+        className={`mb-2 text-center flex flex-col items-center ${
+          activeComponents.includes("Timer") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Timer")}
+      >
+        <img
+          src="https://win98icons.alexmeub.com/icons/png/clock-1.png"
+          alt="timer"
+          width={"28px"}
+        />
+        <p className="">Timer</p>
+      </div>
+
       <div className="mb-2 text-center flex flex-col items-center">
         <a href="https://github.com/cherrydub" target="_blank">
           <img

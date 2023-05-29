@@ -1,31 +1,27 @@
 import React from "react";
-import CvContent from "./CvContent";
+import TimerContent from "./TimerContent";
 
-export default function Cv({ activeComponents, removeActiveComponent }) {
+export default function Timer({ activeComponents, removeActiveComponent }) {
   const handleLinkClick = (event) => {
     //this prevents any background event clickers to work, such as removing and readding the active component
     event.stopPropagation();
-    removeActiveComponent("Cv");
+    removeActiveComponent("Timer");
   };
 
   const isActive =
-    (activeComponents ?? []).length > 0 && activeComponents[0] === "Cv";
+    (activeComponents ?? []).length > 0 && activeComponents[0] === "Timer";
   const titleBarClassName = `title-bar${isActive ? "" : " inactive"}`;
 
   return (
     <div className="">
-      {/* <div className="flex justify-center"> */}
-      <div
-        className="window"
-        // style={{ minWidth: "85vw", maxWidth: "100%" }}
-      >
+      <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>
           <div className="title-bar-text flex">
             <img
-              src="https://win98icons.alexmeub.com/icons/png/message_file-1.png"
+              src="https://win98icons.alexmeub.com/icons/png/clock-0.png"
               alt=""
             />
-            CV
+            Timer
           </div>
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
@@ -38,7 +34,19 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
           </div>
         </div>
         <div className="window-body">
-          <CvContent />
+          <div className="bg-white p-4">
+            {/* <div className="flex justify-center items-center h-screen"> */}
+            <div className="text-center">
+              {/* <h1 className="">Timer</h1> */}
+              <div className="mb-4">
+                <TimerContent duration={120} beepIntervals={[90, 0]} />
+              </div>
+              <div>
+                <TimerContent duration={110} beepIntervals={[75, 0]} />
+              </div>
+            </div>
+            {/* </div> */}
+          </div>
         </div>
       </div>
     </div>

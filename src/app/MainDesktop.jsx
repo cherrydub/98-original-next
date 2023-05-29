@@ -4,6 +4,7 @@ import Cv from "./windows/Cv.jsx";
 import Projects from "./windows/Projects.jsx";
 import Memes from "./windows/Memes.jsx";
 import Todo from "./windows/Todo.jsx";
+import Timer from "./windows/Timer.jsx";
 
 export default function MainDesktop({
   activeComponents,
@@ -15,8 +16,9 @@ export default function MainDesktop({
     addActiveComponent(componentName);
   };
   return (
-    <div className="ml-14">
-      <div className="mb-8 mt-4">
+    <div className="">
+      {/* <div className="pb-8 pt-4"> */}
+      <div className="">
         {/* <div className="mb-8 mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> */}
         {activeComponents.map((componentName, index) => {
           let component = null;
@@ -49,6 +51,15 @@ export default function MainDesktop({
                 />
               );
               break;
+            case "Timer":
+              component = (
+                <Timer
+                  key={componentName}
+                  activeComponents={activeComponents}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
+              break;
             default:
               component = (
                 <Memes
@@ -61,18 +72,25 @@ export default function MainDesktop({
           }
 
           return (
-            <div
-              key={componentName}
-              onClick={() => handleLinkClick(componentName)}
-              //commenting out the classname and style, this would then make them stack ontop of eachother
-              className="absolute"
-              style={{
-                zIndex: activeComponents.length - index,
-                // marginTop: activeComponents.length * activeComponents.length,
-              }}
-            >
-              {component}
-            </div>
+            <>
+              <div
+                key={componentName}
+                onClick={() => handleLinkClick(componentName)}
+                //commenting out the classname and style, this would then make them stack ontop of eachother
+                // className="ml-14 absolute border-2 border-pink-600"
+                className="ml-14 absolute"
+                style={{
+                  zIndex: activeComponents.length - index,
+                  // marginTop: activeComponents.length * activeComponents.length,
+                }}
+              >
+                {component}
+                <div>
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </>
           );
         })}
       </div>

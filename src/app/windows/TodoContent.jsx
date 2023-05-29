@@ -2,11 +2,13 @@ import React, { useState } from "react";
 
 export default function TodoContent() {
   const [tasks, setTasks] = useState([
-    "finish memes dynamic listing",
-    "make contact page",
-    "add btc/eth pricing",
-    "update window states",
-    "make window components",
+    "Finish memes dynamic listing",
+    "Make contact page",
+    "Add btc/eth pricing",
+    "Add shadow to text buttons",
+    "Positioning, Positioning, Positioning",
+    "Status bar field classname",
+    "scrollable windows so doesnt make desktop scroll",
   ]);
   const [newTask, setNewTask] = useState("");
 
