@@ -4,7 +4,7 @@ export default function CvContent() {
   return (
     // <div className="w-full h-full">
     <div
-      className="bg-white p-4 font-roboto"
+      className="bg-white p-4 font-roboto-mono"
       style={{ height: "85vh", overflow: "auto" }}
     >
       <div className="flex flex-col flex-wrap">
@@ -79,7 +79,7 @@ export default function CvContent() {
         <p>
           <span className="font-bold underline text-lg">Skills</span> - HTML -
           CSS - JAVASCRIPT - NODE.JS - JEST | POSTGRESQL - EXPRESS | REACT -
-          TAILWIND | GIT - GITHUB |
+          TAILWIND | GIT - GITHUB
         </p>
         <p>Currently getting familiar with: DART - FLUTTER | TYPESCRIPT</p>
 

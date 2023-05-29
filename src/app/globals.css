@@ -11,8 +11,12 @@ body {
   font-family: Arial;
 }
 
-.font-roboto {
-  font-family: "Roboto", sans-serif;
+.font-arial {
+  font-family: sans-serif;
+}
+
+.font-roboto-mono {
+  font-family: "Roboto-Mono", sans-serif;
 }
 
 /* Left Desktop Nav */
