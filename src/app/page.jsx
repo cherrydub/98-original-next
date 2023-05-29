@@ -31,7 +31,11 @@ export default function Home() {
         addActiveComponent={addActiveComponent}
         removeActiveComponent={removeActiveComponent}
       />
-      <BottomDesktopBar activeComponents={activeComponents} />
+      <BottomDesktopBar
+        activeComponents={activeComponents}
+        addActiveComponent={addActiveComponent}
+        removeActiveComponent={removeActiveComponent}
+      />
     </div>
   );
 }

@@ -82,7 +82,7 @@ export default function LeftDesktopNav({
         <p className="">Memes</p>
       </div>
 
-      <div
+      {/* <div
         className={`mb-2 text-center flex flex-col items-center ${
           activeComponents.includes("Timer") ? "active" : ""
         }`}
@@ -94,7 +94,7 @@ export default function LeftDesktopNav({
           width={"28px"}
         />
         <p className="">Timer</p>
-      </div>
+      </div> */}
 
       <div className="mb-2 text-center flex flex-col items-center">
         <a href="https://github.com/cherrydub" target="_blank">

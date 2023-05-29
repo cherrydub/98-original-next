@@ -1,7 +1,19 @@
 import React from "react";
 import LocalTime from "./components/LocalTime";
 
-export default function BottomDesktopBar({ activeComponents }) {
+export default function BottomDesktopBar({
+  activeComponents,
+  addActiveComponent,
+  removeActiveComponent,
+}) {
+  const handleLinkClick = (componentName) => {
+    if (activeComponents.includes(componentName)) {
+      removeActiveComponent(componentName);
+      addActiveComponent(componentName);
+    } else {
+      addActiveComponent(componentName);
+    }
+  };
   return (
     <div className="start-bar flex">
       <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center">
@@ -23,7 +35,10 @@ export default function BottomDesktopBar({ activeComponents }) {
           );
         })}
       </div>
-      <div className="start-bar-time flex-initial text-center justify-center items-center">
+      <div
+        className="start-bar-time flex-initial text-center justify-center items-center"
+        onClick={() => handleLinkClick("Timer")}
+      >
         <LocalTime />
       </div>
     </div>

@@ -3,14 +3,28 @@ import React from "react";
 export default function CvContent() {
   return (
     // <div className="w-full h-full">
-    <div className="bg-white p-4">
+    <div
+      className="bg-white p-4 font-roboto"
+      style={{ height: "85vh", overflow: "auto" }}
+    >
       <div className="flex flex-col flex-wrap">
-        <p className="font-bold text-4xl">Chris Wisniewski</p>
+        <p className="font-bold text-4xl">CHRIS WISNIEWSKI</p>
         <p>LONDON</p>
         <p>07596 414 717</p>
-        <p>chriscoding@icloud.com</p>
+        <p>
+          <a
+            className="font-bold text-blue-600"
+            href="mailto:chriscoding@icloud.com"
+          >
+            chriscoding@icloud.com
+          </a>
+        </p>
         <p className="inline text-right">
-          <a href="https://github.com/cherrydub" target="_blank">
+          <a
+            className="font-bold text-blue-600"
+            href="https://github.com/cherrydub"
+            target="_blank"
+          >
             <img
               className="inline"
               src="https://www.cherrydub.com/cv/images2/image9.png"
@@ -20,6 +34,7 @@ export default function CvContent() {
             GitHub
           </a>
           <a
+            className="font-bold text-blue-600"
             href="https://www.linkedin.com/in/wisniewskichris/"
             target="_blank"
           >
@@ -31,7 +46,11 @@ export default function CvContent() {
             />{" "}
             LinkedIn
           </a>
-          <a href="https://www.cherrydub.com" target="_blank">
+          <a
+            className="font-bold text-blue-600"
+            href="https://www.cherrydub.com"
+            target="_blank"
+          >
             <img
               className="inline"
               src="https://www.cherrydub.com/cv/images2/image1.png"
@@ -69,7 +88,7 @@ export default function CvContent() {
         <ul>
           <li className="">
             <a
-              className="inline"
+              className="inline font-bold text-blue-600"
               href="https://www.cherrydub.com/"
               target="_blank"
             >
@@ -87,7 +106,7 @@ export default function CvContent() {
 
           <li className="">
             <a
-              className="inline"
+              className="inline font-bold text-blue-600"
               href="https://smartbrain.cherrydub.com/"
               target="_blank"
             >
@@ -103,9 +122,9 @@ export default function CvContent() {
             AI
           </li>
 
-          <li className="inlne">
+          <li className="inlne ">
             <a
-              className="inline"
+              className="inline font-bold text-blue-600"
               href="https://northcoders.com/projects/may-2023/blocklist"
               target="_blank"
             >
@@ -122,7 +141,7 @@ export default function CvContent() {
 
           <li className="">
             <a
-              className="inline"
+              className="inline font-bold text-blue-600"
               href="https://pokedex.cherrydub.com/"
               target="_blank"
             >
@@ -139,7 +158,7 @@ export default function CvContent() {
 
           <li className="">
             <a
-              className="inline"
+              className="inline font-bold text-blue-600"
               href="https://ncgames.cherrydub.com/"
               target="_blank"
             >

@@ -81,7 +81,6 @@ export default function MainDesktop({
                 className="ml-14 absolute"
                 style={{
                   zIndex: activeComponents.length - index,
-                  // marginTop: activeComponents.length * activeComponents.length,
                 }}
               >
                 {component}
