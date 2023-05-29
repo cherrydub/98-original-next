@@ -22,7 +22,7 @@ export default function LeftDesktopNav({
             alt="home"
             width={"28px"}
           />
-          <p className="">Home</p>
+          <p className="text-white">Home</p>
         </a>
       </div>
       <div
@@ -99,14 +99,11 @@ export default function LeftDesktopNav({
       <div className="mb-2 text-center flex flex-col items-center">
         <a href="https://github.com/cherrydub" target="_blank">
           <img
-            // onClick={() => {
-            //   setWindowDisplayed("Counter");
-            // }}
             src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
-            alt="website"
+            alt="GitHub"
             width={"28px"}
           />
-          <p className="">GitHub</p>
+          <p className="text-white">GitHub</p>
         </a>
       </div>
 
