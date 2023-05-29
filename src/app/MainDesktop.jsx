@@ -1,10 +1,10 @@
-import React from "react";
-//backup till here
+import React, { useState } from "react";
 import Cv from "./windows/Cv.jsx";
 import Projects from "./windows/Projects.jsx";
 import Memes from "./windows/Memes.jsx";
 import Todo from "./windows/Todo.jsx";
 import Timer from "./windows/Timer.jsx";
+import Welcome from "./windows/Welcome.jsx";
 
 export default function MainDesktop({
   activeComponents,
@@ -15,6 +15,7 @@ export default function MainDesktop({
     removeActiveComponent(componentName);
     addActiveComponent(componentName);
   };
+
   return (
     <div className="">
       {/* <div className="pb-8 pt-4"> */}
@@ -60,9 +61,18 @@ export default function MainDesktop({
                 />
               );
               break;
-            default:
+            case "Memes":
               component = (
                 <Memes
+                  key={componentName}
+                  activeComponents={activeComponents}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
+              break;
+            default:
+              component = (
+                <Welcome
                   key={componentName}
                   activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}

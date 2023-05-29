@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+  /* Add other font variations if available (e.g., font-weight, font-style) */
+}
 
 body {
   /*bungee shade as font*/
@@ -11,13 +16,13 @@ body {
   font-family: Arial;
 }
 
-.font-arial {
+/* .font-arial {
   font-family: sans-serif;
 }
 
 .font-roboto-mono {
-  font-family: "Roboto-Mono", sans-serif;
-}
+  font-family: "Roboto Mono", sans-serif;
+} */
 
 /* Left Desktop Nav */
 .navigation-desktop {

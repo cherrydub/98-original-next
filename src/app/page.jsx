@@ -5,7 +5,7 @@ import LeftDesktopNav from "./LeftDesktopNav";
 import MainDesktop from "./MainDesktop";
 
 export default function Home() {
-  const [activeComponents, setActiveComponents] = useState([]);
+  const [activeComponents, setActiveComponents] = useState(["Welcome"]);
 
   const addActiveComponent = (componentName) => {
     setActiveComponents((prevActiveComponents) => [

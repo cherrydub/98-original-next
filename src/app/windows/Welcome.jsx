@@ -1,53 +1,45 @@
-// import React from "react";
-// // import { useState } from "react";
+import React from "react";
+import WelcomeContent from "./WelcomeContent";
 
-// export default function Welcome() {
-//   //   const [count, setCount] = useState(0);
-//   //   const [windowSize, setWindowSize] = useState({
-//   //     width: null,
-//   //     height: null,
-//   //   });
-//   const windowSize = { width: null, height: null };
-//   return (
-//     <>
-//       <div style={windowSize} className="window">
-//         <div className="title-bar">
-//           <div className="title-bar-text flex">
-//             <img
-//               src="https://win98icons.alexmeub.com/icons/png/notepad-0.png"
-//               alt=""
-//             />{" "}
-//             {"Welcome"}
-//           </div>
-//           <div className="title-bar-controls">
-//             <button className="bg-gray-300" aria-label="Minimize" />
-//             <button
-//               className="bg-gray-300"
-//               aria-label="Maximize"
-//               //   onClick={handleWindowIconClick}
-//             />
-//             <button
-//               className="bg-gray-300"
-//               //   onClick={() => setWindowDisplayed(null)}
-//               aria-label="Close"
-//             />
-//           </div>
-//         </div>
+export default function Welcome({ activeComponents, removeActiveComponent }) {
+  const handleLinkClick = (event) => {
+    //this prevents any background event clickers to work, such as removing and readding the active component
+    event.stopPropagation();
+    removeActiveComponent("Welcome");
+  };
 
-//         <div className="window-body">
-//           <div>
-//             <p style={{ textAlign: "center" }}>Current:</p>
-//             <div
-//               className="field-row"
-//               style={{ justifyContent: "center", alignItems: "center" }}
-//             >
-//               {/* <button onClick={() => setCount(count + 1)}>+</button>
-//               <button onClick={() => setCount(count - 1)}>-</button>
-//               <button onClick={() => setCount(0)}>0</button> */}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
+  const isActive =
+    (activeComponents ?? []).length > 0 && activeComponents[0] === "Welcome";
+  const titleBarClassName = `title-bar${isActive ? "" : " inactive"}`;
+
+  return (
+    <div className="">
+      {/* <div className="flex justify-center"> */}
+      <div className="window inline-flex flex-col">
+        <div className={titleBarClassName}>
+          <div className="title-bar-text flex">
+            <img
+              src="https://win98icons.alexmeub.com/icons/png/console_prompt-1.png"
+              alt="welcome"
+            />
+            C:\WINDOWS\System32.cmd.exe
+          </div>
+          <div className="title-bar-controls">
+            <button className="bg-gray-300" aria-label="Minimize"></button>
+            <button className="bg-gray-300" aria-label="Maximize"></button>
+            <button
+              onClick={handleLinkClick}
+              className="bg-gray-300"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        {/* <div className="window-body"> */}
+        <div className="bg-black">
+          <WelcomeContent />
+          {/* </div> */}
+        </div>
+      </div>
+    </div>
+  );
+}

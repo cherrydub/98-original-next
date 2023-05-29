@@ -4,11 +4,15 @@ export default function CvContent() {
   return (
     // <div className="w-full h-full">
     <div
-      className="bg-white p-4 font-roboto-mono"
-      style={{ height: "85vh", overflow: "auto" }}
+      className="bg-white p-4"
+      style={{
+        height: "85vh",
+        overflow: "auto",
+        fontFamily: "MyFont",
+      }}
     >
       <div className="flex flex-col flex-wrap">
-        <p className="font-bold text-4xl">CHRIS WISNIEWSKI</p>
+        <p className="font-bold text-4xl">Chris Wisniewski</p>
         <p>LONDON</p>
         <p>07596 414 717</p>
         <p>
