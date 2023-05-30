@@ -1,5 +1,4 @@
 import React from "react";
-import Draggable from "react-draggable";
 import Cv from "./windows/Cv.jsx";
 import Projects from "./windows/Projects.jsx";
 import Memes from "./windows/Memes.jsx";
@@ -33,7 +32,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-4 absolute"; // Positioning for Projects component
+              containerClassName = "ml-14 mt-14 absolute"; // Positioning for Projects component
               break;
             case "Cv":
               component = (
@@ -43,7 +42,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-8 absolute"; // Positioning for Cv component
+              containerClassName = "ml-14 mt-0 absolute"; // Positioning for Cv component
               break;
             case "Todo":
               component = (
@@ -89,26 +88,20 @@ export default function MainDesktop({
           }
 
           return (
-            <Draggable
-              cancel=".title-bar-controls window-body"
+            <div
               key={componentName}
-              defaultPosition={{ x: 0, y: 0 }}
-              handle=".title-bar"
+              onClick={() => handleLinkClick(componentName)}
+              className={containerClassName}
+              style={{
+                zIndex: activeComponents.length - index,
+              }}
             >
-              <div
-                onClick={() => handleLinkClick(componentName)}
-                className={containerClassName}
-                style={{
-                  zIndex: activeComponents.length - index,
-                }}
-              >
-                {component}
-                <div>
-                  <br />
-                  <br />
-                </div>
+              {component}
+              <div>
+                <br />
+                <br />
               </div>
-            </Draggable>
+            </div>
           );
         })}
       </div>
