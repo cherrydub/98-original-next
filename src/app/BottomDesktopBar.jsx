@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import LocalTime from "./components/LocalTime";
 
 export default function BottomDesktopBar({
   activeComponents,
+  setActiveComponents,
   addActiveComponent,
   removeActiveComponent,
 }) {
@@ -14,10 +15,27 @@ export default function BottomDesktopBar({
       addActiveComponent(componentName);
     }
   };
+
+  const [switchOn, setSwitchOn] = useState(false);
+
+  const toggleSwitch = () => {
+    setSwitchOn((prevState) => !prevState);
+    if (switchOn) {
+      setActiveComponents([]);
+    } else {
+      addActiveComponent("Cv");
+      addActiveComponent("Projects");
+      addActiveComponent("Todo");
+      addActiveComponent("Memes");
+      addActiveComponent("Welcome");
+    }
+  };
+
   return (
     <div className="start-bar flex">
       <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center">
         <img
+          onClick={toggleSwitch}
           src="https://win98icons.alexmeub.com/images/start-button.png"
           width={"35px"}
           alt=""

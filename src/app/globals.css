@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "MyFont";
+  font-family: "RobotoMono";
   src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
   /* Add other font variations if available (e.g., font-weight, font-style) */
 }

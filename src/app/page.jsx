@@ -33,6 +33,7 @@ export default function Home() {
       />
       <BottomDesktopBar
         activeComponents={activeComponents}
+        setActiveComponents={setActiveComponents}
         addActiveComponent={addActiveComponent}
         removeActiveComponent={removeActiveComponent}
       />

@@ -8,7 +8,7 @@ export default function CvContent() {
       style={{
         height: "75vh",
         overflow: "auto",
-        fontFamily: "MyFont",
+        fontFamily: "RobotoMono",
       }}
     >
       <div className="flex flex-col flex-wrap">
@@ -126,7 +126,7 @@ export default function CvContent() {
             AI
           </li>
 
-          <li className="inlne ">
+          <li className="inlne">
             <a
               className="inline font-bold text-blue-600"
               href="https://northcoders.com/projects/may-2023/blocklist"
@@ -209,26 +209,26 @@ export default function CvContent() {
         <p className="italic">JULY 2018 - OCT 2021</p>
         <p className="font-bold">Mac-Seven - IT Consultant</p>
         <p>
-          Worked as an IT consultant with a range of clients across various
+          -Worked as an IT consultant with a range of clients across various
           industries
         </p>
         <p>
-          Gained valuable experience with Mac-Seven, a leading managed service
+          -Gained valuable experience with Mac-Seven, a leading managed service
           provider serving diverse clients including schools and businesses
         </p>
         <p>
-          Provided remote IT support and managed a wide range of systems,
+          -Provided remote IT support and managed a wide range of systems,
           including Windows and Mac machines, and oversaw server, firewall,
           hardware, and software maintenance
         </p>
         <p>
-          Developed an extensive knowledge of various company setups and
+          -Developed an extensive knowledge of various company setups and
           acquired a comprehensive understanding of the intricacies of IT
           management
         </p>
-        <p>Honed skills in managing and troubleshooting IT issues</p>
+        <p>-Honed skills in managing and troubleshooting IT issues</p>
         <p>
-          Confident in leveraging expertise to make valuable contributions to
+          -Confident in leveraging expertise to make valuable contributions to
           any tech role
         </p>
         <br />

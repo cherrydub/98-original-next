@@ -33,7 +33,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-2 absolute"; // Positioning for Projects component
+              containerClassName = "ml-14 top-1/4 absolute"; // Positioning for Projects component
               break;
             case "Cv":
               component = (
@@ -43,7 +43,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-8 absolute"; // Positioning for Cv component
+              containerClassName = "ml-14 absolute"; // Positioning for Cv component
               break;
             case "Todo":
               component = (
@@ -53,8 +53,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName =
-                "left-1/4 top-1/4 transform -translate-x-1/4 -translate-y-1/4 absolute "; // Centering for Todo component
+              containerClassName = "left-1/4 top-1/2 absolute"; // Centering for Todo component
               break;
             case "Memes":
               component = (
@@ -64,8 +63,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName =
-                "left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute"; // Centering for Memes component
+              containerClassName = "ml-14 top-3/4 absolute"; // Centering for Memes component
               break;
             case "Timer":
               component = (
@@ -85,8 +83,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName =
-                "left-1/4 top-1/4 transform -translate-x-1/4 -translate-y-1/4 absolute";
+              containerClassName = "ml-14 mt-6 absolute";
               break;
           }
 

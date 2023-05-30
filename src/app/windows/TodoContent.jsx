@@ -4,11 +4,9 @@ export default function TodoContent() {
   const [tasks, setTasks] = useState([
     "Finish memes dynamic listing",
     "Make contact page",
-    "Add btc/eth pricing",
     "Add shadow to text buttons",
     "Positioning, Positioning, Positioning",
     "Status bar field classname",
-    "scrollable windows so doesnt make desktop scroll",
   ]);
   const [newTask, setNewTask] = useState("");
 
@@ -28,7 +26,12 @@ export default function TodoContent() {
 
   return (
     <>
-      <div className="flex flex-col flex-wrap p-4 gap-4">
+      <div
+        className="flex flex-col flex-wrap p-4 gap-4"
+        style={{
+          fontFamily: "RobotoMono",
+        }}
+      >
         <div>
           <ol className="pl-5 list-disc">
             {tasks.map((task, index) => (
