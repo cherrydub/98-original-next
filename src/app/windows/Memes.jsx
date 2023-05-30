@@ -13,7 +13,7 @@ export default function Memes({ activeComponents, removeActiveComponent }) {
   const titleBarClassName = `title-bar${isActive ? "" : " inactive"}`;
 
   return (
-    <div className="border-4 border-pink-600">
+    <div className="">
       {/* <div className="flex justify-center"> */}
       <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>

@@ -1,5 +1,5 @@
 import React from "react";
-//backup till here
+//before hover/active
 export default function LeftDesktopNav({
   activeComponents,
   addActiveComponent,

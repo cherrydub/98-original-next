@@ -1,5 +1,4 @@
 import React from "react";
-import Draggable from "react-draggable";
 import Cv from "./windows/Cv.jsx";
 import Projects from "./windows/Projects.jsx";
 import Memes from "./windows/Memes.jsx";
@@ -22,7 +21,6 @@ export default function MainDesktop({
       <div className="">
         {activeComponents.map((componentName, index) => {
           let component = null;
-          let containerClassName = "ml-14 absolute"; // Default container class name
 
           switch (componentName) {
             case "Projects":
@@ -33,7 +31,6 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-4 absolute"; // Positioning for Projects component
               break;
             case "Cv":
               component = (
@@ -43,7 +40,6 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-8 absolute"; // Positioning for Cv component
               break;
             case "Todo":
               component = (
@@ -53,19 +49,6 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName =
-                "left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute"; // Centering for Todo component
-              break;
-            case "Memes":
-              component = (
-                <Memes
-                  key={componentName}
-                  activeComponents={activeComponents}
-                  removeActiveComponent={removeActiveComponent}
-                />
-              );
-              containerClassName =
-                "left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute"; // Centering for Memes component
               break;
             case "Timer":
               component = (
@@ -75,7 +58,15 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-12 absolute"; // Positioning for Timer component
+              break;
+            case "Memes":
+              component = (
+                <Memes
+                  key={componentName}
+                  activeComponents={activeComponents}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
               break;
             default:
               component = (
@@ -89,21 +80,20 @@ export default function MainDesktop({
           }
 
           return (
-            <Draggable key={componentName} defaultPosition={{ x: 0, y: 0 }}>
-              <div
-                onClick={() => handleLinkClick(componentName)}
-                className={containerClassName}
-                style={{
-                  zIndex: activeComponents.length - index,
-                }}
-              >
-                {component}
-                <div>
-                  <br />
-                  <br />
-                </div>
+            <div
+              key={componentName} // Add the key prop to the surrounding div
+              onClick={() => handleLinkClick(componentName)}
+              className="ml-14 absolute"
+              style={{
+                zIndex: activeComponents.length - index,
+              }}
+            >
+              {component}
+              <div>
+                <br />
+                <br />
               </div>
-            </Draggable>
+            </div>
           );
         })}
       </div>

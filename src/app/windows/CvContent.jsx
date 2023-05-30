@@ -6,7 +6,7 @@ export default function CvContent() {
     <div
       className="bg-white p-4"
       style={{
-        height: "85vh",
+        height: "75vh",
         overflow: "auto",
         fontFamily: "MyFont",
       }}
