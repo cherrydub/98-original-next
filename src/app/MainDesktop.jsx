@@ -85,7 +85,8 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-22 absolute";
+              containerClassName =
+                "left-1/4 top-1/4 transform -translate-x-1/4 -translate-y-1/4 absolute";
               break;
           }
 

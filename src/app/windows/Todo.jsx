@@ -16,8 +16,9 @@ export default function Todo({ activeComponents, removeActiveComponent }) {
     <div className="">
       <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>
-          <div className="title-bar-text flex">
+          <div className="title-bar-text flex ">
             <img
+              className="btn"
               src="https://win98icons.alexmeub.com/icons/png/notepad-3.png"
               alt=""
             />

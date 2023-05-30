@@ -19,6 +19,7 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
         <div className={titleBarClassName}>
           <div className="title-bar-text flex">
             <img
+              className="btn"
               src="https://win98icons.alexmeub.com/icons/png/console_prompt-1.png"
               alt="welcome"
             />
