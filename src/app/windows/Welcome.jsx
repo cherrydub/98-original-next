@@ -24,7 +24,7 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
             />
             C:\WINDOWS\System32.cmd.exe
           </div>
-          <div className="title-bar-controls">
+          <div className="title-bar-controls btn">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
             <button

@@ -90,7 +90,7 @@ export default function MainDesktop({
 
           return (
             <Draggable
-              cancel=".title-bar-controls window-body bg-gray-300"
+              cancel=".btn"
               key={componentName}
               defaultPosition={{ x: 0, y: 0 }}
               handle=".title-bar"

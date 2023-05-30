@@ -23,7 +23,7 @@ export default function Timer({ activeComponents, removeActiveComponent }) {
             />
             Timer
           </div>
-          <div className="title-bar-controls">
+          <div className="title-bar-controls btn">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
             <button

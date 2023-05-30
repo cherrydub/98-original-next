@@ -27,7 +27,7 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
             />
             CV
           </div>
-          <div className="title-bar-controls">
+          <div className="title-bar-controls btn">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
             <button
