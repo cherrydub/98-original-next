@@ -9,7 +9,19 @@
 
 body {
   /*bungee shade as font*/
-  /* background: #ffffff url("./assets/background2.png") repeat fixed; */
+  /* 
+  background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
+    center;
+  background: #ffffff url("../../public/backgrounds/robocop.jpeg") repeat fixed
+    center;
+  background: #ffffff url("../../public/backgrounds/dbz1.png") repeat fixed
+    center;
+  background: #ffffff url("../../public/backgrounds/pepe1.png") repeat fixed
+    center;
+  background: #ffffff url("../../public/backgrounds/pepe3.png") repeat fixed
+    right;
+
+  background-size: auto 100vh; */
   /* background-size: 66px; */
   /* Set the background image size to 50% of the container */
   /* font-size: 12px; */

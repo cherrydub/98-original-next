@@ -16,7 +16,7 @@ export default function Timer({ activeComponents, removeActiveComponent }) {
     <div className="">
       <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>
-          <div className="title-bar-text flex">
+          <div className="title-bar-text flex cursor-default">
             <img
               className="btn"
               src="https://win98icons.alexmeub.com/icons/png/clock-0.png"

@@ -14,8 +14,8 @@ export default function LeftDesktopNav({
     }
   };
   return (
-    <div className="navigation-desktop fixed left-3 top-5 space-y-3 text-white">
-      <div className="mb-2 text-center flex flex-col items-center">
+    <div className="navigation-desktop fixed left-2 top-3 text-white">
+      <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer">
         <a href="">
           <img
             src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-0.png"
@@ -26,7 +26,7 @@ export default function LeftDesktopNav({
         </a>
       </div>
       <div
-        className={`mb-2 text-center flex flex-col items-center ${
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Projects") ? "active" : ""
         }`}
         onClick={() => handleLinkClick("Projects")}
@@ -41,7 +41,7 @@ export default function LeftDesktopNav({
 
       {/* CV Link */}
       <div
-        className={`mb-2 text-center flex flex-col items-center ${
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Cv") ? "active" : ""
         }`}
         onClick={() => handleLinkClick("Cv")}
@@ -55,7 +55,7 @@ export default function LeftDesktopNav({
       </div>
 
       <div
-        className={`mb-2 text-center flex flex-col items-center ${
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Todo") ? "active" : ""
         }`}
         onClick={() => handleLinkClick("Todo")}
@@ -69,7 +69,7 @@ export default function LeftDesktopNav({
       </div>
 
       <div
-        className={`mb-2 text-center flex flex-col items-center ${
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Memes") ? "active" : ""
         }`}
         onClick={() => handleLinkClick("Memes")}
@@ -96,7 +96,7 @@ export default function LeftDesktopNav({
         <p className="">Timer</p>
       </div> */}
 
-      <div className="mb-2 text-center flex flex-col items-center">
+      <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
         <a href="https://github.com/cherrydub" target="_blank">
           <img
             src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
@@ -107,7 +107,7 @@ export default function LeftDesktopNav({
         </a>
       </div>
 
-      <div className="mb-2 text-center flex flex-col items-center">
+      {/* <div className="mb-2 text-center flex flex-col items-center ">
         <img
           src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-4.png"
           alt="other"
@@ -122,9 +122,9 @@ export default function LeftDesktopNav({
           width={"28px"}
         />
         <p className="">Misc</p>
-      </div>
+      </div> */}
 
-      <div className="mb-2 text-center flex flex-col items-center">
+      <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
         <img
           // onClick={() => {
           //   setWindowDisplayed("Counter");

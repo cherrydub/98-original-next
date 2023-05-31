@@ -17,7 +17,7 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
       {/* <div className="flex justify-center"> */}
       <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>
-          <div className="title-bar-text flex">
+          <div className="title-bar-text flex cursor-default">
             <img
               className="btn"
               src="https://win98icons.alexmeub.com/icons/png/console_prompt-1.png"
@@ -36,7 +36,7 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
           </div>
         </div>
         {/* <div className="window-body"> */}
-        <div className="bg-black">
+        <div className="bg-black ">
           <WelcomeContent />
           {/* </div> */}
         </div>

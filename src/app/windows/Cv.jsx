@@ -20,8 +20,9 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
         // style={{ minWidth: "85vw", maxWidth: "100%" }}
       >
         <div className={titleBarClassName}>
-          <div className="title-bar-text flex">
+          <div className="title-bar-text flex cursor-default">
             <img
+              className="btn"
               src="https://win98icons.alexmeub.com/icons/png/message_file-1.png"
               alt=""
             />

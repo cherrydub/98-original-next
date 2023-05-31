@@ -33,7 +33,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 top-1/4 absolute"; // Positioning for Projects component
+              containerClassName = "ml-14 top-1/4 absolute right-1/4"; // Positioning for Projects component
               break;
             case "Cv":
               component = (
@@ -83,7 +83,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-6 absolute";
+              containerClassName = "left-1/4 mt-6 absolute";
               break;
           }
 

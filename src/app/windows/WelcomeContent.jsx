@@ -27,14 +27,12 @@ export default function WelcomeContent() {
   }, []);
 
   return (
-    <div className="text-white p-2 font-bold">
-      <p className="">C:\WINDOWS{">"}_welcome to my homepage</p>
-      <br />
-      <p>cherrydub</p>
+    <div className="text-white p-2 font-bold cursor-not-allowed">
+      <p className="">C:\WINDOWS{">"}_welcome to my homepage 😎</p>
       <br />
 
-      <p>BTC: ${btcPrice !== null ? btcPrice : "Loading..."}</p>
-      <p>ETH: ${ethPrice !== null ? ethPrice : "Loading..."}</p>
+      <p>₿: ${btcPrice !== null ? btcPrice : "Loading..."}</p>
+      <p>eth: ${ethPrice !== null ? ethPrice : "Loading..."}</p>
       <br />
       <p>
         Latest Git push:{" "}
@@ -42,6 +40,8 @@ export default function WelcomeContent() {
           ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
           : "Loading..."}
       </p>
+      <br />
+      <p className="text-right">cherrydub©</p>
     </div>
   );
 }

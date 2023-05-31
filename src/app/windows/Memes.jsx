@@ -17,7 +17,7 @@ export default function Memes({ activeComponents, removeActiveComponent }) {
       {/* <div className="flex justify-center"> */}
       <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>
-          <div className="title-bar-text flex">
+          <div className="title-bar-text flex cursor-default">
             <img
               className="btn"
               src="https://win98icons.alexmeub.com/icons/png/briefcase-1.png"

@@ -37,7 +37,7 @@ export default function TodoContent() {
             {tasks.map((task, index) => (
               <li
                 key={index}
-                className="border-b"
+                className="border-b border-black"
                 onClick={() => handleTaskClick(index)}
                 onMouseEnter={(e) => {
                   e.target.style.textDecoration = "line-through";
@@ -56,6 +56,7 @@ export default function TodoContent() {
 
         <form onSubmit={handleAddTask}>
           <input
+            className="bg-yellow-200"
             type="text"
             placeholder="add task"
             value={newTask}
