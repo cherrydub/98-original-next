@@ -175,6 +175,9 @@ body {
   border-color: rgb(233, 233, 233) rgb(233, 233, 233) rgb(255, 255, 255)
     rgb(233, 233, 233);
 } */
+.text-shadow-black {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
 /* extra stuff that came with next.js */
 

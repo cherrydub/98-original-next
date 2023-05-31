@@ -18,7 +18,7 @@ export default function Projects({ activeComponents, removeActiveComponent }) {
         <div className={titleBarClassName}>
           <div className="title-bar-text flex cursor-default">
             <img
-              className="btn"
+              className="btn pr-1"
               src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-3.png"
               alt=""
             />

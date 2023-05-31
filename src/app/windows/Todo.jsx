@@ -18,7 +18,7 @@ export default function Todo({ activeComponents, removeActiveComponent }) {
         <div className={titleBarClassName}>
           <div className="title-bar-text flex cursor-default">
             <img
-              className="btn"
+              className="btn pr-1"
               src="https://win98icons.alexmeub.com/icons/png/notepad-3.png"
               alt=""
             />

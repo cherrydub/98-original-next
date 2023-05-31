@@ -23,7 +23,7 @@ export default function LeftDesktopNav({
             width={"28px"}
             title="Welcome"
           />
-          <p className="text-white">Home</p>
+          <p className="text-white text-shadow-black">Home</p>
         </a>
       </div>
       <div
@@ -38,7 +38,7 @@ export default function LeftDesktopNav({
           width={"28px"}
           title="Projects"
         />
-        <p className="">Projects</p>
+        <p className="text-white text-shadow-black">Projects</p>
       </div>
 
       {/* CV Link */}
@@ -54,7 +54,7 @@ export default function LeftDesktopNav({
           width={"28px"}
           title="Resume"
         />
-        <p className="">CV</p>
+        <p className="text-white text-shadow-black">CV</p>
       </div>
 
       <div
@@ -69,7 +69,7 @@ export default function LeftDesktopNav({
           width={"28px"}
           title="Todo List"
         />
-        <p className="">Todo</p>
+        <p className="text-white text-shadow-black">Todo</p>
       </div>
 
       {/* <div
@@ -109,7 +109,7 @@ export default function LeftDesktopNav({
             width={"28px"}
             title="Cherrydub"
           />
-          <p className="text-white">GitHub</p>
+          <p className="text-white text-shadow-black">GitHub</p>
         </a>
       </div>
 
@@ -153,7 +153,7 @@ export default function LeftDesktopNav({
             width={"28px"}
             title="chriscoding@icloud.com"
           />
-          <p className="text-white text-center">Contact</p>
+          <p className="text-white text-shadow-black">Contact</p>
         </a>
       </div>
 
@@ -170,7 +170,7 @@ export default function LeftDesktopNav({
           width={"28px"}
           title="Lulz"
         />
-        <p className="">Memes</p>
+        <p className="text-white text-shadow-black">Memes</p>
       </div>
     </div>
   );
