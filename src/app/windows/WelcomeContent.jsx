@@ -32,7 +32,7 @@ export default function WelcomeContent() {
       <br />
 
       <p>₿: ${btcPrice !== null ? btcPrice : "Loading..."}</p>
-      <p>eth: ${ethPrice !== null ? ethPrice : "Loading..."}</p>
+      <p>Ξ: ${ethPrice !== null ? ethPrice : "Loading..."}</p>
       <br />
       <p>
         Latest Git push:{" "}
