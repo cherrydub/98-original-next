@@ -1,14 +1,19 @@
 import React from "react";
+// import Cvclean from "../../../public/cv/cvclean";
 
 export default function CvContent() {
   return (
-    // <div className="w-full h-full">
+    // <div>
+    //   <Cvclean />
+    // </div>
     <div
-      className="bg-white p-4"
+      className="bg-white p-4 text-black"
       style={{
         height: "75vh",
         overflow: "auto",
-        fontFamily: "RobotoMono",
+        fontFamily: "RobotoMonoMedium",
+        fontSize: "10px",
+        color: "black",
       }}
     >
       <div className="flex flex-col flex-wrap">
@@ -246,7 +251,6 @@ export default function CvContent() {
         <p className="font-bold">Linden High School, New Jersey USA</p>
       </div>
     </div>
-    // </div>
   );
 }
 
@@ -256,11 +260,11 @@ export default function CvContent() {
 //   return (
 //     // <div className="w-full h-full">
 //     <div className="bg-white">
-//       <embed
-//         className="w-full h-full"
+//       <iframe
+//         // className="w-full h-full"
 //         src="/cv/cv2.html"
 //         frameBorder="0"
-//         style={{ height: "420px" }}
+//         style={{ height: "75vh", overflow: "auto" }}
 //       />
 //     </div>
 //     // </div>

@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "RobotoMono";
+  font-family: "RobotoMonoRegular";
   src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+  /* Add other font variations if available (e.g., font-weight, font-style) */
+}
+
+@font-face {
+  font-family: "RobotoMonoMedium";
+  src: url("/fonts/RobotoMono-Medium.ttf") format("truetype");
   /* Add other font variations if available (e.g., font-weight, font-style) */
 }
 

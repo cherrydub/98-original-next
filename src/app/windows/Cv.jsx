@@ -8,6 +8,8 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
     removeActiveComponent("Cv");
   };
 
+  const handleSizeClick = () => {};
+
   const isActive =
     (activeComponents ?? []).length > 0 && activeComponents[0] === "Cv";
   const titleBarClassName = `title-bar${isActive ? "" : " inactive"}`;
@@ -30,7 +32,11 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
           </div>
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
-            <button className="bg-gray-300" aria-label="Maximize"></button>
+            <button
+              onclick={handleSizeClick}
+              className="bg-gray-300"
+              aria-label="Maximize"
+            ></button>
             <button
               onClick={handleLinkClick}
               className="bg-gray-300 btn"

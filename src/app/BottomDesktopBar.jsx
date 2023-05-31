@@ -33,9 +33,10 @@ export default function BottomDesktopBar({
 
   return (
     <div className="start-bar flex">
-      <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center">
+      <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center ">
         <img
           onClick={toggleSwitch}
+          className=""
           src="https://win98icons.alexmeub.com/images/start-button.png"
           width={"35px"}
           alt=""
