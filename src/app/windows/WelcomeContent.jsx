@@ -27,21 +27,33 @@ export default function WelcomeContent() {
   }, []);
 
   return (
-    <div className="text-white p-2 font-bold cursor-not-allowed">
-      <p className="">C:\WINDOWS{">"}_welcome to my homepage 😎</p>
-      <br />
+    <div className="text-whitefont-bold cursor-not-allowed">
+      <pre className="text-white bg-black">
+        {`
+               .__                               
+__  _  __ ____ |  |   ____  ____   _____   ____  
+\\ \\/ \\/ // __ \\|  | _/ ___\\/  _ \\ /     \\_/ __ \\ 
+ \\     /\\  ___/|  |_\\  \\__(  <_> )  Y Y  \\  ___/ 
+  \\/\\_/  \\___  >____/\\___  >____/|__|_|  /\\___  >
+             \\/          \\/            \\/     \\/
+      `}
 
-      <p>₿: ${btcPrice !== null ? btcPrice : "Loading..."}</p>
-      <p>Ξ: ${ethPrice !== null ? ethPrice : "Loading..."}</p>
-      <br />
-      <p>
-        Latest Git push:{" "}
-        {lastPushTime !== null
-          ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
-          : "Loading..."}
-      </p>
-      <br />
-      <p className="text-right">cherrydub©</p>
+        <br />
+        <p className="text-right">cherrydub©</p>
+
+        <p>₿: ${btcPrice !== null ? btcPrice : "Loading..."}</p>
+        <p>Ξ: ${ethPrice !== null ? ethPrice : "Loading..."}</p>
+        <br />
+        <p></p>
+        <br />
+
+        <p className="">
+          C:\WINDOWS{">"}_Latest push:{" "}
+          {lastPushTime !== null
+            ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
+            : "Loading..."}{" "}
+        </p>
+      </pre>
     </div>
   );
 }
