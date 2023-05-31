@@ -7,7 +7,7 @@ export default function CvContent() {
     //   <Cvclean />
     // </div>
     <div
-      className="bg-white p-4 text-black"
+      className="bg-white p-4 text-black border-l border-t border-gray-500"
       style={{
         height: "75vh",
         overflow: "auto",

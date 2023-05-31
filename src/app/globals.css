@@ -15,6 +15,9 @@
 
 body {
   /*bungee shade as font*/
+
+  background: #008080;
+
   /* 
   background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
     center;
@@ -28,11 +31,24 @@ body {
     right;
 
   background-size: auto 100vh; */
+
+  /* background: #ffffff url("../../public/backgrounds/dbz1.png") repeat fixed
+    center; */
+
   /* background-size: 66px; */
   /* Set the background image size to 50% of the container */
   /* font-size: 12px; */
-  background: #008080;
+
   font-family: Arial;
+}
+
+@media (width < 420px) {
+  body {
+    background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
+      center;
+
+    background-size: auto 100vh;
+  }
 }
 
 /* .font-arial {

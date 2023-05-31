@@ -35,7 +35,7 @@ export default function Timer({ activeComponents, removeActiveComponent }) {
           </div>
         </div>
         <div className="window-body">
-          <div className="bg-white p-4">
+          <div className="bg-white p-4 border-l border-t border-gray-500">
             {/* <div className="flex justify-center items-center h-screen"> */}
             <div className="text-center">
               {/* <h1 className="">Timer</h1> */}

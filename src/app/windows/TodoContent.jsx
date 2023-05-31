@@ -27,9 +27,10 @@ export default function TodoContent() {
   return (
     <>
       <div
-        className="flex flex-col flex-wrap p-4 gap-4"
+        className="flex flex-col flex-wrap p-2 gap-2"
         style={{
-          fontFamily: "RobotoMono",
+          fontFamily: "RobotoMonoRegular",
+          minWidth: "300px",
         }}
       >
         <div>
@@ -38,6 +39,7 @@ export default function TodoContent() {
               <li
                 key={index}
                 className="border-b border-black"
+                style={{}}
                 onClick={() => handleTaskClick(index)}
                 onMouseEnter={(e) => {
                   e.target.style.textDecoration = "line-through";

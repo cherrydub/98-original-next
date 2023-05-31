@@ -13,8 +13,8 @@ export default function MemesContent() {
   //   }
 
   return (
-    <div className="flex flex-wrap p-4 gap-4">
-      test
+    <div className="flex flex-wrap p-4 gap-4 border-l border-t border-gray-500">
+      Test
       {/* {fileNames.map((file) => {
         return (
           <div className="flex flex-col items-center">

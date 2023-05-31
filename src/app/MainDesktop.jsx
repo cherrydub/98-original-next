@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Draggable from "react-draggable";
 import Cv from "./windows/Cv.jsx";
 import Projects from "./windows/Projects.jsx";
@@ -6,6 +6,10 @@ import Memes from "./windows/Memes.jsx";
 import Todo from "./windows/Todo.jsx";
 import Timer from "./windows/Timer.jsx";
 import Welcome from "./windows/Welcome.jsx";
+import IE from "./windows/IE.jsx";
+import Contact from "./windows/Contact.jsx";
+// import SpeechRecognition from "./components/SpeechRecognition.jsx";
+// import ChatGPT from "./components/ChatGPT.jsx";
 
 export default function MainDesktop({
   activeComponents,
@@ -16,9 +20,17 @@ export default function MainDesktop({
     removeActiveComponent(componentName);
     addActiveComponent(componentName);
   };
+  //chat gpt and speech stuff below
+  // const [transcript, setTranscript] = useState("");
+
+  // const handleTranscript = (newTranscript) => {
+  //   setTranscript(newTranscript);
+  // };
 
   return (
     <div className="">
+      {/* <SpeechRecognition onTranscript={handleTranscript} />
+      <ChatGPT prompt={transcript} /> */}
       <div className="">
         {activeComponents.map((componentName, index) => {
           let component = null;
@@ -64,6 +76,26 @@ export default function MainDesktop({
                 />
               );
               containerClassName = "ml-14 top-3/4 absolute"; // Centering for Memes component
+              break;
+            case "IE":
+              component = (
+                <IE
+                  key={componentName}
+                  activeComponents={activeComponents}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
+              containerClassName = "ml-14 absolute"; // Positioning for Cv component
+              break;
+            case "Contact":
+              component = (
+                <Contact
+                  key={componentName}
+                  activeComponents={activeComponents}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
+              containerClassName = "left-1/4 top-1/4 absolute"; // Positioning for Cv component
               break;
             case "Timer":
               component = (

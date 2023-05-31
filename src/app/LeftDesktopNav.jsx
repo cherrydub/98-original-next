@@ -68,20 +68,6 @@ export default function LeftDesktopNav({
         <p className="">Todo</p>
       </div>
 
-      <div
-        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
-          activeComponents.includes("Memes") ? "active" : ""
-        }`}
-        onClick={() => handleLinkClick("Memes")}
-      >
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png"
-          alt="memes"
-          width={"28px"}
-        />
-        <p className="">Memes</p>
-      </div>
-
       {/* <div
         className={`mb-2 text-center flex flex-col items-center ${
           activeComponents.includes("Timer") ? "active" : ""
@@ -94,6 +80,20 @@ export default function LeftDesktopNav({
           width={"28px"}
         />
         <p className="">Timer</p>
+      </div> */}
+
+      {/* <div
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
+          activeComponents.includes("IE") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("IE")}
+      >
+        <img
+          src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
+          alt="IE"
+          width={"28px"}
+        />
+        <p className="">IE</p>
       </div> */}
 
       <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
@@ -124,16 +124,32 @@ export default function LeftDesktopNav({
         <p className="">Misc</p>
       </div> */}
 
-      <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
+      <div
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
+          activeComponents.includes("Contact") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Contact")}
+      >
         <img
-          // onClick={() => {
-          //   setWindowDisplayed("Counter");
-          // }}
           src="https://win98icons.alexmeub.com/icons/png/outlook_express-4.png"
           alt="email"
           width={"28px"}
         />
         <p className="">Contact</p>
+      </div>
+
+      <div
+        className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
+          activeComponents.includes("Memes") ? "active" : ""
+        }`}
+        onClick={() => handleLinkClick("Memes")}
+      >
+        <img
+          src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png"
+          alt="memes"
+          width={"28px"}
+        />
+        <p className="">Memes</p>
       </div>
     </div>
   );
