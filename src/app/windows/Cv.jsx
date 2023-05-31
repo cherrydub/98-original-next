@@ -33,7 +33,7 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
           <div className="title-bar-controls">
             <button className="bg-gray-300" aria-label="Minimize"></button>
             <button
-              onclick={handleSizeClick}
+              onClick={handleSizeClick}
               className="bg-gray-300"
               aria-label="Maximize"
             ></button>
