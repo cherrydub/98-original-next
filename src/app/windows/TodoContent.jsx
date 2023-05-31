@@ -30,7 +30,7 @@ export default function TodoContent() {
         className="flex flex-col flex-wrap p-2 gap-2"
         style={{
           fontFamily: "RobotoMonoRegular",
-          minWidth: "300px",
+          // minWidth: "300px",
         }}
       >
         <div>

@@ -27,6 +27,7 @@ export default function BottomDesktopBar({
       addActiveComponent("Projects");
       addActiveComponent("Todo");
       addActiveComponent("Memes");
+      addActiveComponent("Contact");
       addActiveComponent("Welcome");
     }
   };
