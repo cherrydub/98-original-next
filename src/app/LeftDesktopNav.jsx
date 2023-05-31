@@ -21,6 +21,7 @@ export default function LeftDesktopNav({
             src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-0.png"
             alt="home"
             width={"28px"}
+            title="Welcome"
           />
           <p className="text-white">Home</p>
         </a>
@@ -35,6 +36,7 @@ export default function LeftDesktopNav({
           src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png"
           alt="projects"
           width={"28px"}
+          title="Projects"
         />
         <p className="">Projects</p>
       </div>
@@ -50,6 +52,7 @@ export default function LeftDesktopNav({
           src="https://win98icons.alexmeub.com/icons/png/message_file-0.png"
           alt="cv"
           width={"28px"}
+          title="Resume"
         />
         <p className="">CV</p>
       </div>
@@ -64,6 +67,7 @@ export default function LeftDesktopNav({
           src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
           alt="todo"
           width={"28px"}
+          title="Todo List"
         />
         <p className="">Todo</p>
       </div>
@@ -99,9 +103,11 @@ export default function LeftDesktopNav({
       <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
         <a href="https://github.com/cherrydub" target="_blank">
           <img
+            className="mx-auto"
             src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
             alt="GitHub"
             width={"28px"}
+            title="Cherrydub"
           />
           <p className="text-white">GitHub</p>
         </a>
@@ -124,7 +130,7 @@ export default function LeftDesktopNav({
         <p className="">Misc</p>
       </div> */}
 
-      <div
+      {/* <div
         className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Contact") ? "active" : ""
         }`}
@@ -136,6 +142,19 @@ export default function LeftDesktopNav({
           width={"28px"}
         />
         <p className="">Contact</p>
+      </div> */}
+
+      <div className=" mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
+        <a href="mailto:chriscoding@icloud.com">
+          <img
+            className="mx-auto"
+            src="https://win98icons.alexmeub.com/icons/png/outlook_express-4.png"
+            alt="chriscoding@icloud.com"
+            width={"28px"}
+            title="chriscoding@icloud.com"
+          />
+          <p className="text-white text-center">Contact</p>
+        </a>
       </div>
 
       <div
@@ -145,9 +164,11 @@ export default function LeftDesktopNav({
         onClick={() => handleLinkClick("Memes")}
       >
         <img
+          className="mx-auto"
           src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png"
           alt="memes"
           width={"28px"}
+          title="Lulz"
         />
         <p className="">Memes</p>
       </div>

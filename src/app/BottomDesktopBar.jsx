@@ -16,6 +16,18 @@ export default function BottomDesktopBar({
     }
   };
 
+  const icons = {
+    Welcome: "https://win98icons.alexmeub.com/icons/png/console_prompt-1.png",
+    Contact: "https://win98icons.alexmeub.com/icons/png/message_file-1.png",
+    Cv: "https://win98icons.alexmeub.com/icons/png/message_file-1.png",
+    IE: "https://win98icons.alexmeub.com/icons/png/message_file-1.png",
+    Memes: "https://win98icons.alexmeub.com/icons/png/briefcase-1.png",
+    Projects:
+      "https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-3.png",
+    Timer: "https://win98icons.alexmeub.com/icons/png/clock-0.png",
+    Todo: "https://win98icons.alexmeub.com/icons/png/notepad-3.png",
+  };
+
   const [switchOn, setSwitchOn] = useState(false);
 
   const toggleSwitch = () => {
@@ -27,7 +39,7 @@ export default function BottomDesktopBar({
       addActiveComponent("Projects");
       addActiveComponent("Todo");
       addActiveComponent("Memes");
-      addActiveComponent("Contact");
+      // addActiveComponent("Contact");
       addActiveComponent("Welcome");
     }
   };
@@ -45,14 +57,29 @@ export default function BottomDesktopBar({
       </div>
       <div className="flex-auto mx-2 flex">
         {activeComponents.map((window) => {
-          return (
+          return activeComponents[0] === window ? (
             <div
-              className="start-bar-tabs flex-auto text-center justify-center items-center"
+              className=" bg-gray-300 start-bar-tabs-active flex-auto text-center justify-center items-center inline cursor-default"
               key={window}
             >
-              {window}
+              <img className="inline" src={icons[window]} alt="" />{" "}
+              <span className="font-bold ">{window}</span>
+            </div>
+          ) : (
+            <div
+              className="start-bar-tabs-inactive flex-auto text-center justify-center items-center inline cursor-default"
+              key={window}
+            >
+              <img className="inline" src={icons[window]} alt="" /> {window}
             </div>
           );
+
+          // <div
+          //   className="start-bar-tabs flex-auto text-center justify-center items-center"
+          //   key={window}
+          // >
+          //   {window}
+          // </div>
         })}
       </div>
       <div
