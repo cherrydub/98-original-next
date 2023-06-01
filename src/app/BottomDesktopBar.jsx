@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LocalTime from "./components/LocalTime";
+import displayicon from "../../public/icons/display2.png";
 
 export default function BottomDesktopBar({
   activeComponents,
@@ -26,6 +27,8 @@ export default function BottomDesktopBar({
       "https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-3.png",
     Timer: "https://win98icons.alexmeub.com/icons/png/clock-0.png",
     Todo: "https://win98icons.alexmeub.com/icons/png/notepad-3.png",
+    Display:
+      "https://win98icons.alexmeub.com/icons/png/display_properties-1.png",
   };
 
   const [switchOn, setSwitchOn] = useState(false);
@@ -56,7 +59,23 @@ export default function BottomDesktopBar({
         />
       </div>
       <div className="flex-auto mx-2 flex">
+        <div
+          className={` ${activeComponents.includes("Display") ? "active" : ""}`}
+          onClick={() => handleLinkClick("Display")}
+        >
+          <img
+            className=""
+            src={displayicon.src}
+            alt="displayicon"
+            style={{ marginRight: "5px" }}
+            title="Display Settings"
+          />
+        </div>
+
         {activeComponents.map((window) => {
+          if (window === "Display") {
+            return null; // Skip rendering "Display" component
+          }
           return activeComponents[0] === window ? (
             <div
               className=" bg-gray-300 start-bar-tabs-active flex-auto text-center justify-center items-center inline cursor-default"

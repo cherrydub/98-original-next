@@ -10,6 +10,8 @@ import IE from "./windows/IE.jsx";
 import Contact from "./windows/Contact.jsx";
 // import SpeechRecognition from "./components/SpeechRecognition.jsx";
 // import ChatGPT from "./components/ChatGPT.jsx";
+import displayicon from "../../public/icons/display.png";
+import Display from "./windows/Display.jsx";
 
 export default function MainDesktop({
   activeComponents,
@@ -80,6 +82,16 @@ export default function MainDesktop({
             case "IE":
               component = (
                 <IE
+                  key={componentName}
+                  activeComponents={activeComponents}
+                  removeActiveComponent={removeActiveComponent}
+                />
+              );
+              containerClassName = "ml-14 absolute"; // Positioning for Cv component
+              break;
+            case "Display":
+              component = (
+                <Display
                   key={componentName}
                   activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
