@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`${backgroundChoice} h-screen`}>
+    <div className={`${backgroundChoice}`} style={{ height: "100svh" }}>
       {/* <BackgroundChanger /> */}
       <LeftDesktopNav
         activeComponents={activeComponents}
