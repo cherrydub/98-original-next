@@ -29,6 +29,8 @@ export default function WelcomeContent() {
   return (
     <div className="text-whitefont-bold cursor-not-allowed">
       <pre className="text-white bg-black text-center">
+        <div className="preextra text-left">C:\WINDOWS{">"}_ </div>
+
         {`
                .__                               
 __  _  __ ____ |  |   ____  ____   _____   ____  
@@ -37,23 +39,16 @@ __  _  __ ____ |  |   ____  ____   _____   ____
   \\/\\_/  \\___  >____/\\___  >____/|__|_|  /\\___  >
              \\/          \\/            \\/     \\/
       `}
-
         <div className="preextra">
-          <div className="text-right">
+          <p className="text-right">
             ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
             {ethPrice !== null ? ethPrice : "Loading..."}
-          </div>
+          </p>
 
-          <p className="text-right">cherrydub©</p>
+          <p className="text-left">cherrydub©</p>
 
-          <p></p>
-          <p></p>
-          <br />
-          <p></p>
-          <br />
-
-          <p className="">
-            C:\WINDOWS{">"}_Latest push:{" "}
+          <p className="text-left">
+            Latest push:
             {lastPushTime !== null
               ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
               : "Loading..."}{" "}
