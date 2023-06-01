@@ -42,35 +42,35 @@ body {
   font-family: Arial;
 }
 
-.background-one {
+.background-ashpika {
   background-image: url("/backgrounds/ashpika.jpg");
   background-repeat: repeat;
   background-position: center;
   background-size: auto 100vh;
 }
 
-.background-two {
+.background-robocop {
   background-image: url("/backgrounds/robocop.jpeg");
   background-repeat: repeat;
   background-position: center;
   background-size: auto 100vh;
 }
 
-.background-three {
+.background-dbz1 {
   background-image: url("/backgrounds/dbz1.png");
   background-repeat: repeat;
   background-position: center;
   background-size: auto 100vh;
 }
 
-.background-four {
+.background-pepe1 {
   background-image: url("/backgrounds/pepe1.png");
   background-repeat: repeat;
   background-position: center;
   background-size: auto 100vh;
 }
 
-.background-five {
+.background-pepe3 {
   background-image: url("/backgrounds/pepe3.png");
   background-repeat: repeat;
   background-position: right;

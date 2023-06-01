@@ -14,11 +14,11 @@ export default function DisplayContent({ setBackgroundChoice }) {
         onChange={handleBackgroundChange}
       >
         <option value="null">Default: Green</option>
-        <option value="background-one">Pokemon</option>
-        <option value="background-two">Dragonball Z</option>
-        <option value="background-three">RoboCop</option>
-        <option value="background-four">Pepe 1</option>
-        <option value="background-five">Pepe 2</option>
+        <option value="background-ashpika">Pokemon</option>
+        <option value="background-dbz1">RoboCop</option>
+        <option value="background-robocop">RoboCop Z</option>
+        <option value="background-pepe1">Pepe 1</option>
+        <option value="background-pepe3">Pepe 2</option>
       </select>
       {/* <p>
         Add your own URL background: <input type="url" />
