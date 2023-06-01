@@ -10,6 +10,7 @@ export default async function LastGitPush() {
     );
 
     const lastPushTime = response.data.commit.author.date;
+    // const lastPushMessage = response.data.commit.message;
 
     return lastPushTime;
   } catch (error) {

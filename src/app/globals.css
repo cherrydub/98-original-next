@@ -77,43 +77,13 @@ body {
   background-size: auto 100vh;
 }
 
-/* .background-one {
-  background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
-    center;
-  background-size: auto 100vh;
-}
-
-.background-two {
-  background: #ffffff url("../../public/backgrounds/robocop.jpeg") repeat fixed
-    center;
-  background-size: auto 100vh;
-}
-
-.background-three {
-  background: #ffffff url("../../public/backgrounds/dbz1.png") repeat fixed
-    center;
-  background-size: auto 100vh;
-}
-
-.background-four {
-  background: #ffffff url("../../public/backgrounds/pepe1.png") repeat fixed
-    center;
-  background-size: auto 100vh;
-}
-
-.background-five {
-  background: #ffffff url("../../public/backgrounds/pepe3.png") repeat fixed
-    right;
-  background-size: auto 100vh;
-} */
-
-@media only screen and (max-width: 420px) {
+/* @media only screen and (max-width: 420px) {
   body {
     background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
       center;
     background-size: auto 100vh;
   }
-}
+} */
 
 /* .font-arial {
   font-family: sans-serif;
