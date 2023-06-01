@@ -10,7 +10,7 @@ import IE from "./windows/IE.jsx";
 import Contact from "./windows/Contact.jsx";
 // import SpeechRecognition from "./components/SpeechRecognition.jsx";
 // import ChatGPT from "./components/ChatGPT.jsx";
-import displayicon from "../../public/icons/display.png";
+// import displayicon from "../../public/icons/display.png";
 import Display from "./windows/Display.jsx";
 
 export default function MainDesktop({

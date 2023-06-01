@@ -25,7 +25,7 @@ export default function LocalTime() {
           src="https://win98icons.alexmeub.com/icons/png/time_and_date-1.png"
           alt=""
           style={{ marginRight: "5px" }}
-          width="12px"
+          width="14px"
         />
       </div>
       <div className="">{formattedTime}</div>

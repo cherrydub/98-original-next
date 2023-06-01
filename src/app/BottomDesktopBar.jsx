@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LocalTime from "./components/LocalTime";
-import displayicon from "../../public/icons/display2.png";
+import displayicon from "../../public/icons/16x16/display-tab.png";
 
 export default function BottomDesktopBar({
   activeComponents,
@@ -67,6 +67,7 @@ export default function BottomDesktopBar({
             className=""
             src={displayicon.src}
             alt="displayicon"
+            width={"14px"}
             style={{ marginRight: "5px" }}
             title="Display Settings"
           />
@@ -81,7 +82,12 @@ export default function BottomDesktopBar({
               className=" bg-gray-300 start-bar-tabs-active flex-auto text-center justify-center items-center inline cursor-default"
               key={window}
             >
-              <img className="inline" src={icons[window]} alt="" />{" "}
+              <img
+                className="inline"
+                src={icons[window]}
+                alt=""
+                width={"14px"}
+              />{" "}
               <span className="font-bold ">{window}</span>
             </div>
           ) : (
@@ -89,7 +95,13 @@ export default function BottomDesktopBar({
               className="start-bar-tabs-inactive flex-auto text-center justify-center items-center inline cursor-default"
               key={window}
             >
-              <img className="inline" src={icons[window]} alt="" /> {window}
+              <img
+                className="inline"
+                src={icons[window]}
+                alt=""
+                width={"14px"}
+              />{" "}
+              {window}
             </div>
           );
 

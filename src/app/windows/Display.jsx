@@ -36,11 +36,11 @@ export default function Display({
             Display
           </div>
           <div className="title-bar-controls">
-            <button className="bg-gray-300" aria-label="Minimize"></button>
+            {/* <button className="bg-gray-300" aria-label="Minimize"></button> */}
             <button
               onClick={handleSizeClick}
               className="bg-gray-300"
-              aria-label="Maximize"
+              aria-label="Help"
             ></button>
             <button
               onClick={handleLinkClick}
