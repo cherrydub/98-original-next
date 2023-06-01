@@ -8,7 +8,8 @@ import MainDesktop from "./MainDesktop";
 
 export default function Home() {
   const [activeComponents, setActiveComponents] = useState(["Welcome"]);
-  const [backgroundChoice, setBackgroundChoice] = useState(null);
+  const [backgroundChoice, setBackgroundChoice] =
+    useState("background-default");
 
   const addActiveComponent = (componentName) => {
     setActiveComponents((prevActiveComponents) => [
@@ -41,6 +42,7 @@ export default function Home() {
         activeComponents={activeComponents}
         setActiveComponents={setActiveComponents}
         addActiveComponent={addActiveComponent}
+        backgroundChoice={backgroundChoice}
         removeActiveComponent={removeActiveComponent}
       />
     </div>

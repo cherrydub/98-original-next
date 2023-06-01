@@ -4,7 +4,7 @@ import DisplayContent from "./DisplayContent";
 export default function Display({
   activeComponents,
   removeActiveComponent,
-  handleBackgroundChange,
+  backgroundChoice,
   setBackgroundChoice,
 }) {
   const handleLinkClick = (event) => {
@@ -50,7 +50,10 @@ export default function Display({
           </div>
         </div>
         <div className="window-body">
-          <DisplayContent setBackgroundChoice={setBackgroundChoice} />
+          <DisplayContent
+            backgroundChoice={backgroundChoice}
+            setBackgroundChoice={setBackgroundChoice}
+          />
         </div>
       </div>
     </div>

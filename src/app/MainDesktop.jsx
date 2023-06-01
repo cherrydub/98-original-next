@@ -17,6 +17,7 @@ export default function MainDesktop({
   activeComponents,
   removeActiveComponent,
   addActiveComponent,
+  backgroundChoice,
   setBackgroundChoice,
 }) {
   const handleLinkClick = (componentName) => {
@@ -96,6 +97,7 @@ export default function MainDesktop({
                   key={componentName}
                   activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
+                  backgroundChoice={backgroundChoice}
                   setBackgroundChoice={setBackgroundChoice}
                 />
               );

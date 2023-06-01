@@ -16,7 +16,7 @@
 body {
   /*bungee shade as font*/
 
-  background: #008080;
+  background: #fff;
 
   /* 
   background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
@@ -40,6 +40,10 @@ body {
   /* font-size: 12px; */
 
   font-family: Arial;
+}
+
+.background-default {
+  background: #008080;
 }
 
 .background-ashpika {
