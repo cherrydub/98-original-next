@@ -26,8 +26,7 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
             C:\WINDOWS\System32.cmd.exe
           </div>
           <div className="title-bar-controls">
-            <button className="bg-gray-300" aria-label="Minimize"></button>
-            <button className="bg-gray-300" aria-label="Maximize"></button>
+            <button className="bg-gray-300" aria-label="Help"></button>
             <button
               onClick={handleLinkClick}
               className="bg-gray-300 btn"

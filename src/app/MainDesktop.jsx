@@ -101,7 +101,7 @@ export default function MainDesktop({
                   setBackgroundChoice={setBackgroundChoice}
                 />
               );
-              containerClassName = "ml-14 absolute"; // Positioning for Cv component
+              containerClassName = "ml-14 bottom-1/4 absolute"; // Positioning for Cv component
               break;
             case "Contact":
               component = (
