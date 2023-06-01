@@ -3,10 +3,12 @@ import { useState } from "react";
 import BottomDesktopBar from "./BottomDesktopBar";
 import LeftDesktopNav from "./LeftDesktopNav";
 import MainDesktop from "./MainDesktop";
+
 // import BackgroundChanger from "./components/BackgroundChanger";
 
 export default function Home() {
   const [activeComponents, setActiveComponents] = useState(["Welcome"]);
+  const [backgroundChoice, setBackgroundChoice] = useState(null);
 
   const addActiveComponent = (componentName) => {
     setActiveComponents((prevActiveComponents) => [
@@ -22,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className={`${backgroundChoice} h-screen`}>
       {/* <BackgroundChanger /> */}
       <LeftDesktopNav
         activeComponents={activeComponents}
@@ -33,6 +35,7 @@ export default function Home() {
         activeComponents={activeComponents}
         addActiveComponent={addActiveComponent}
         removeActiveComponent={removeActiveComponent}
+        setBackgroundChoice={setBackgroundChoice}
       />
       <BottomDesktopBar
         activeComponents={activeComponents}

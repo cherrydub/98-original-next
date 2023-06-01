@@ -17,6 +17,7 @@ export default function MainDesktop({
   activeComponents,
   removeActiveComponent,
   addActiveComponent,
+  setBackgroundChoice,
 }) {
   const handleLinkClick = (componentName) => {
     removeActiveComponent(componentName);
@@ -95,6 +96,7 @@ export default function MainDesktop({
                   key={componentName}
                   activeComponents={activeComponents}
                   removeActiveComponent={removeActiveComponent}
+                  setBackgroundChoice={setBackgroundChoice}
                 />
               );
               containerClassName = "ml-14 absolute"; // Positioning for Cv component

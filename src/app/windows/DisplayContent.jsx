@@ -1,23 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function DisplayContent() {
+export default function DisplayContent({ setBackgroundChoice }) {
+  const handleBackgroundChange = (event) => {
+    setBackgroundChoice(event.target.value);
+  };
+
   return (
     <div>
-      <p>Choose from these:</p>
-      <p></p>
-      <select className="pr-5 pl-2">
-        <option selected value="option1">
-          Default Background
-        </option>
-        <option value="option2">Pokemon</option>
-        <option value="option3">Drangonball Z</option>
-        <option value="option4">RoboCop</option>
-        <option value="option5">Pepe 1</option>
-        <option value="option5">Pepe 2</option>
+      <p>Update background:</p>
+      <select
+        className="pr-5 pl-2"
+        value={null}
+        onChange={handleBackgroundChange}
+      >
+        <option value="null">Default: Green</option>
+        <option value="background-one">Pokemon</option>
+        <option value="background-two">Dragonball Z</option>
+        <option value="background-three">RoboCop</option>
+        <option value="background-four">Pepe 1</option>
+        <option value="background-five">Pepe 2</option>
       </select>
-      <p>
+      {/* <p>
         Add your own URL background: <input type="url" />
-      </p>
+      </p> */}
     </div>
   );
 }

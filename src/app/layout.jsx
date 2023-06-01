@@ -9,12 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-        rel="stylesheet"
-      /> */}
-
-      <body>{children}</body>
+      <body className="">{children}</body>
     </html>
   );
 }

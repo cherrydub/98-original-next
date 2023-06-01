@@ -42,6 +42,71 @@ body {
   font-family: Arial;
 }
 
+.background-one {
+  background-image: url("/backgrounds/ashpika.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh;
+}
+
+.background-two {
+  background-image: url("/backgrounds/robocop.jpeg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh;
+}
+
+.background-three {
+  background-image: url("/backgrounds/dbz1.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh;
+}
+
+.background-four {
+  background-image: url("/backgrounds/pepe1.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh;
+}
+
+.background-five {
+  background-image: url("/backgrounds/pepe3.png");
+  background-repeat: repeat;
+  background-position: right;
+  background-size: auto 100vh;
+}
+
+/* .background-one {
+  background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed
+    center;
+  background-size: auto 100vh;
+}
+
+.background-two {
+  background: #ffffff url("../../public/backgrounds/robocop.jpeg") repeat fixed
+    center;
+  background-size: auto 100vh;
+}
+
+.background-three {
+  background: #ffffff url("../../public/backgrounds/dbz1.png") repeat fixed
+    center;
+  background-size: auto 100vh;
+}
+
+.background-four {
+  background: #ffffff url("../../public/backgrounds/pepe1.png") repeat fixed
+    center;
+  background-size: auto 100vh;
+}
+
+.background-five {
+  background: #ffffff url("../../public/backgrounds/pepe3.png") repeat fixed
+    right;
+  background-size: auto 100vh;
+} */
+
 @media only screen and (max-width: 420px) {
   body {
     background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed

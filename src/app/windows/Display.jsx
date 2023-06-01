@@ -1,7 +1,12 @@
 import React from "react";
 import DisplayContent from "./DisplayContent";
 
-export default function IE({ activeComponents, removeActiveComponent }) {
+export default function Display({
+  activeComponents,
+  removeActiveComponent,
+  handleBackgroundChange,
+  setBackgroundChoice,
+}) {
   const handleLinkClick = (event) => {
     //this prevents any background event clickers to work, such as removing and readding the active component
     event.stopPropagation();
@@ -45,7 +50,7 @@ export default function IE({ activeComponents, removeActiveComponent }) {
           </div>
         </div>
         <div className="window-body">
-          <DisplayContent />
+          <DisplayContent setBackgroundChoice={setBackgroundChoice} />
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ export default function TodoContent() {
     "Add shadow to text buttons",
     "Positioning, Positioning, Positioning",
     "Status bar field classname",
+    "Fix status bar squish on mobile, right-side component especially",
   ]);
   const [newTask, setNewTask] = useState("");
 
