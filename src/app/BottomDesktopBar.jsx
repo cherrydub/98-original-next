@@ -64,7 +64,7 @@ export default function BottomDesktopBar({
           onClick={() => handleLinkClick("Display")}
         >
           <img
-            className=""
+            className="hover:cursor-pointer"
             src={displayicon.src}
             alt="displayicon"
             width={"14px"}
