@@ -81,6 +81,22 @@ body {
   background-size: auto 100vh;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
 /* @media only screen and (max-width: 420px) {
   body {
     background: #ffffff url("../../public/backgrounds/ashpika.jpg") repeat fixed

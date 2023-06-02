@@ -44,7 +44,7 @@ export default function Display({
             ></button>
             <button
               onClick={handleLinkClick}
-              className="bg-gray-300 btn"
+              className="bg-gray-300 btn hover:bg-gray-100"
               aria-label="Close"
             ></button>
           </div>

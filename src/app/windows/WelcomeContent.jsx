@@ -28,8 +28,34 @@ export default function WelcomeContent() {
 
   return (
     <div className="text-whitefont-bold cursor-not-allowed">
-      <pre className="text-white bg-black text-center">
-        <div className="preextra text-left">C:\WINDOWS{">"}_ </div>
+      <pre className=" bg-black text-white text-center">
+        <div className="preextra">
+          <div className="flex">
+            <div className="flex-initial">cherrydub©</div>
+            <div className="flex-grow text-right">
+              ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
+              {ethPrice !== null ? ethPrice : "Loading..."}
+            </div>
+          </div>
+          {/* <div className="text-left">
+            <span className="">cherrydub©</span>
+            <span className="text-right">
+              ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
+              {ethPrice !== null ? ethPrice : "Loading..."}
+            </span>
+          </div> */}
+
+          {/* <p className="text-right"></p>
+
+          <p className="text-left"></p> */}
+
+          <p className="text-left">
+            Latest push:
+            {lastPushTime !== null
+              ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
+              : "Loading..."}{" "}
+          </p>
+        </div>
 
         {`
                .__                               
@@ -39,20 +65,10 @@ __  _  __ ____ |  |   ____  ____   _____   ____
   \\/\\_/  \\___  >____/\\___  >____/|__|_|  /\\___  >
              \\/          \\/            \\/     \\/
       `}
-        <div className="preextra">
-          <p className="text-right">
-            ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
-            {ethPrice !== null ? ethPrice : "Loading..."}
-          </p>
 
-          <p className="text-left">cherrydub©</p>
-
-          <p className="text-left">
-            Latest push:
-            {lastPushTime !== null
-              ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
-              : "Loading..."}{" "}
-          </p>
+        <div className="preextra text-left">
+          C:\WINDOWS{">"}
+          <span className="animate-blink">_</span>
         </div>
       </pre>
     </div>

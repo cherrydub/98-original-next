@@ -52,14 +52,14 @@ export default function BottomDesktopBar({
       <div className="flex-initial start-button-wrapper text-center justify-center items-center self-center ">
         <img
           onClick={toggleSwitch}
-          className=""
+          className="hover:opacity-50"
           src="https://win98icons.alexmeub.com/images/start-button.png"
           width={"35px"}
           alt=""
         />
       </div>
-      <div className="flex-auto mx-2 flex">
-        <div
+      <div className="flex-auto mx-1 flex">
+        {/* <div
           className={` ${activeComponents.includes("Display") ? "active" : ""}`}
           onClick={() => handleLinkClick("Display")}
         >
@@ -71,7 +71,7 @@ export default function BottomDesktopBar({
             style={{ marginRight: "5px" }}
             title="Display Settings"
           />
-        </div>
+        </div> */}
 
         {activeComponents.map((window) => {
           if (window === "Display") {
@@ -94,6 +94,7 @@ export default function BottomDesktopBar({
             <div
               className="start-bar-tabs-inactive flex-auto text-center justify-center items-center inline cursor-default"
               key={window}
+              onClick={() => handleLinkClick(window)}
             >
               <img
                 className="inline"
@@ -113,11 +114,29 @@ export default function BottomDesktopBar({
           // </div>
         })}
       </div>
-      <div
-        className="start-bar-time flex-initial text-center justify-center items-center"
-        onClick={() => handleLinkClick("Timer")}
-      >
-        <LocalTime />
+
+      <div className="start-bar-time flex-initial text-center justify-center items-center">
+        <div className="flex">
+          <div className="flex flex-row justify-center items-start self-center">
+            <div className="flex items-start">
+              <img
+                className="inline mr-1 hover:opacity-50"
+                onClick={() => handleLinkClick("Display")}
+                src="https://win98icons.alexmeub.com/icons/png/display_properties-1.png"
+                alt=""
+                width="14px"
+              />
+              <img
+                className="inline mr-1 hover:opacity-50"
+                onClick={() => handleLinkClick("Timer")}
+                src="https://win98icons.alexmeub.com/icons/png/time_and_date-1.png"
+                alt=""
+                width="14px"
+              />
+            </div>
+          </div>
+          <LocalTime />
+        </div>
       </div>
     </div>
   );

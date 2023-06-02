@@ -1,5 +1,7 @@
 import React from "react";
 //before hover/active
+import computericon from "../../public/icons/48x48/computer_explorer_cool-0copy.png";
+
 export default function LeftDesktopNav({
   activeComponents,
   addActiveComponent,
@@ -18,7 +20,8 @@ export default function LeftDesktopNav({
       <div className="mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer">
         <a href="">
           <img
-            src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-0.png"
+            // src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-0.png"
+            src={computericon.src}
             alt="home"
             width={"28px"}
             title="Welcome"

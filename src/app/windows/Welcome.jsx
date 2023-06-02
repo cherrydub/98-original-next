@@ -29,13 +29,13 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
             <button className="bg-gray-300" aria-label="Help"></button>
             <button
               onClick={handleLinkClick}
-              className="bg-gray-300 btn"
+              className="bg-gray-300 btn hover:bg-gray-100"
               aria-label="Close"
             ></button>
           </div>
         </div>
         {/* <div className="window-body"> */}
-        <div className="bg-black ">
+        <div className="bg-transparent">
           <WelcomeContent />
           {/* </div> */}
         </div>

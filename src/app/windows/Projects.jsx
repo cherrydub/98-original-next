@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectsContent from "./ProjectsContent";
 
 export default function Projects({ activeComponents, removeActiveComponent }) {
+  // const [windowSize, setWindowSize] = useState(null);
+
   const handleLinkClick = (event) => {
-    //this prevents any background event clickers to work, such as removing and readding the active component
     event.stopPropagation();
     removeActiveComponent("Projects");
   };
+
+  // const handleMaxRestore = () => {
+  //   if (windowSize === null) {
+  //     setWindowSize("h-screen w-screen top-0");
+  //   } else {
+  //     setWindowSize(null);
+  //   }
+  // };
 
   const isActive =
     (activeComponents ?? []).length > 0 && activeComponents[0] === "Projects";
@@ -14,6 +23,7 @@ export default function Projects({ activeComponents, removeActiveComponent }) {
 
   return (
     <div className="">
+      {/* <div className={`${windowSize} window inline-flex flex-col`}> */}
       <div className="window inline-flex flex-col">
         <div className={titleBarClassName}>
           <div className="title-bar-text flex cursor-default">
@@ -25,11 +35,15 @@ export default function Projects({ activeComponents, removeActiveComponent }) {
             Projects
           </div>
           <div className="title-bar-controls">
-            <button className="bg-gray-300" aria-label="Minimize"></button>
+            <button
+              onClick={handleLinkClick}
+              className="bg-gray-300 btn hover:bg-gray-100"
+              aria-label="Minimize"
+            ></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
             <button
               onClick={handleLinkClick}
-              className="bg-gray-300 btn"
+              className="bg-gray-300 btn hover:bg-gray-100"
               aria-label="Close"
             ></button>
           </div>

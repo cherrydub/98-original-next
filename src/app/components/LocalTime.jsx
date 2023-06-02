@@ -18,17 +18,5 @@ export default function LocalTime() {
     })
     .toUpperCase();
 
-  return (
-    <div className="flex">
-      <div className="flex flex-col justify-center">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/time_and_date-1.png"
-          alt=""
-          style={{ marginRight: "5px" }}
-          width="14px"
-        />
-      </div>
-      <div className="">{formattedTime}</div>
-    </div>
-  );
+  return <div className="">{formattedTime}</div>;
 }

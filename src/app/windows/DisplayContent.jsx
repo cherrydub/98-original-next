@@ -13,7 +13,7 @@ export default function DisplayContent({
       <p>Update background:</p>
       <select
         className="pr-5 pl-2"
-        value={backgroundChoice}
+        value="null"
         onChange={handleBackgroundChange}
       >
         <option value="background-default">Default: Green</option>

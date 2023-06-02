@@ -25,11 +25,15 @@ export default function Todo({ activeComponents, removeActiveComponent }) {
             Todo
           </div>
           <div className="title-bar-controls">
-            <button className="bg-gray-300" aria-label="Minimize"></button>
+            <button
+              onClick={handleLinkClick}
+              className="bg-gray-300 btn hover:bg-gray-100"
+              aria-label="Minimize"
+            ></button>
             <button className="bg-gray-300" aria-label="Maximize"></button>
             <button
               onClick={handleLinkClick}
-              className="bg-gray-300 btn"
+              className="bg-gray-300 btn hover:bg-gray-100"
               aria-label="Close"
             ></button>
           </div>
