@@ -38,24 +38,17 @@ export default function WelcomeContent() {
               {ethPrice > 1800 && btcPrice > 27000 ? " 🙂" : " 🙃"}
             </div>
           </div>
-          {/* <div className="text-left">
-            <span className="">cherrydub©</span>
-            <span className="text-right">
-              ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
-              {ethPrice !== null ? ethPrice : "Loading..."}
-            </span>
-          </div> */}
 
-          {/* <p className="text-right"></p>
-
-          <p className="text-left"></p> */}
-
-          <p className="text-left">
-            Latest push:
-            {lastPushTime !== null
-              ? lastPushTime.split("T")[0] + " @ " + lastPushTime.split("T")[1]
-              : "Loading..."}{" "}
-          </p>
+          <div className="flex">
+            <div className="flex-initial">Latest push:</div>
+            <div className="flex-grow text-right">
+              {lastPushTime !== null
+                ? lastPushTime.split("T")[0] +
+                  " @ " +
+                  lastPushTime.split("T")[1]
+                : "Loading..."}{" "}
+            </div>
+          </div>
         </div>
 
         {`
