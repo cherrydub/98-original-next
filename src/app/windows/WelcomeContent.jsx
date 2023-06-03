@@ -35,6 +35,7 @@ export default function WelcomeContent() {
             <div className="flex-grow text-right">
               ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
               {ethPrice !== null ? ethPrice : "Loading..."}
+              {ethPrice > 1800 && btcPrice > 27000 ? " 🙂" : " 🙃"}
             </div>
           </div>
           {/* <div className="text-left">
