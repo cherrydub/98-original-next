@@ -63,9 +63,8 @@ export default function TodoContent({ setTaskTheme }) {
         <form onSubmit={handleAddTask}>
           <div className="flex">
             <div className="flex flex-grow">
-              {" "}
               <input
-                className=""
+                className="flex-grow"
                 type="text"
                 placeholder="add task"
                 value={newTask}
@@ -75,39 +74,41 @@ export default function TodoContent({ setTaskTheme }) {
                 +
               </button>
             </div>
-
-            <div className="flex flex-row justify-around items-center">
-              <div
-                onClick={() => setTaskTheme("bg-red-200")}
-                className="w-2 h-2 bg-red-200 border border-black cursor-pointer m-1"
-              ></div>
-              <div
-                onClick={() => setTaskTheme("bg-orange-200")}
-                className="w-2 h-2 bg-orange-200 border border-black cursor-pointer m-1"
-              ></div>
-              <div
-                onClick={() => setTaskTheme("bg-yellow-100")}
-                className="w-2 h-2 bg-yellow-100 border border-black cursor-pointer m-1"
-              ></div>
-              <div
-                onClick={() => setTaskTheme("bg-green-200")}
-                className="w-2 h-2 bg-green-200 border border-black cursor-pointer m-1"
-              ></div>
-              <div
-                onClick={() => setTaskTheme("bg-blue-200")}
-                className="w-2 h-2 bg-blue-200 border border-black cursor-pointer m-1"
-              ></div>
-              <div
-                onClick={() => setTaskTheme("bg-indigo-200")}
-                className="w-2 h-2 bg-indigo-200 border border-black cursor-pointer m-1"
-              ></div>
-              <div
-                onClick={() => setTaskTheme("bg-violet-200")}
-                className="w-2 h-2 bg-violet-200 border border-black cursor-pointer m-1"
-              ></div>
-            </div>
           </div>
         </form>
+
+        <div>
+          <div className="flex flex-row flex-grow justify-around items-center">
+            <div
+              onClick={() => setTaskTheme("bg-red-200")}
+              className="w-2 h-2 bg-red-200 border border-black cursor-pointer"
+            ></div>
+            <div
+              onClick={() => setTaskTheme("bg-orange-200")}
+              className="w-2 h-2 bg-orange-200 border border-black cursor-pointer"
+            ></div>
+            <div
+              onClick={() => setTaskTheme("bg-yellow-100")}
+              className="w-2 h-2 bg-yellow-100 border border-black cursor-pointer"
+            ></div>
+            <div
+              onClick={() => setTaskTheme("bg-green-200")}
+              className="w-2 h-2 bg-green-200 border border-black cursor-pointer"
+            ></div>
+            <div
+              onClick={() => setTaskTheme("bg-blue-200")}
+              className="w-2 h-2 bg-blue-200 border border-black cursor-pointer"
+            ></div>
+            <div
+              onClick={() => setTaskTheme("bg-indigo-200")}
+              className="w-2 h-2 bg-indigo-200 border border-black cursor-pointer"
+            ></div>
+            <div
+              onClick={() => setTaskTheme("bg-violet-200")}
+              className="w-2 h-2 bg-violet-200 border border-black cursor-pointer"
+            ></div>
+          </div>
+        </div>
       </div>
     </>
   );
