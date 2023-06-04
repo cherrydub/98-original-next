@@ -57,7 +57,7 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
         <div className="window-body">
           <CvContent />
         </div>
-        <div className="status-bar">
+        <div className="status-bar -mt-2 ">
           <span className="status-bar-field text-center">
             <a href="https://raw.githubusercontent.com/cherrydub/cherrydub/main/ChrisWisniewskiCV.pdf">
               <img className="inline" src={floppy.src} width={"14px"} alt="" />
