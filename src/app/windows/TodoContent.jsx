@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
-export default function TodoContent() {
+export default function TodoContent({ setTaskTheme }) {
   const [tasks, setTasks] = useState([
     "Finish memes dynamic listing",
     "Make contact page",
-    "Add shadow to text buttons",
-    "Positioning, Positioning, Positioning",
-    "Status bar field classname",
     "Fix status bar squish on mobile, right-side component especially",
+    "Personal 98 login for diff desktops",
+    "Allow additional todo's and notes",
   ]);
   const [newTask, setNewTask] = useState("");
 
@@ -35,6 +34,10 @@ export default function TodoContent() {
         }}
       >
         <div>
+          <div className="flex flex-row">
+            {/* <div className="">theme color:</div> */}
+          </div>
+
           <ol className="pl-5 list-disc">
             {tasks.map((task, index) => (
               <li
@@ -58,16 +61,52 @@ export default function TodoContent() {
         </div>
 
         <form onSubmit={handleAddTask}>
-          <input
-            className="bg-yellow-200"
-            type="text"
-            placeholder="add task"
-            value={newTask}
-            onChange={(e) => setNewTask(e.target.value)}
-          />
-          <button className="bg-gray-300" type="submit">
-            +
-          </button>
+          <div className="flex">
+            <div>
+              {" "}
+              <input
+                className=""
+                type="text"
+                placeholder="add task"
+                value={newTask}
+                onChange={(e) => setNewTask(e.target.value)}
+              />
+              <button className="bg-gray-300" type="submit">
+                +
+              </button>
+            </div>
+
+            <div className="flex flex-row flex-grow justify-around items-center">
+              <div
+                onClick={() => setTaskTheme("bg-red-200")}
+                className="w-2 h-2 bg-red-200 border border-black cursor-pointer"
+              ></div>
+              <div
+                onClick={() => setTaskTheme("bg-orange-200")}
+                className="w-2 h-2 bg-orange-200 border border-black cursor-pointer"
+              ></div>
+              <div
+                onClick={() => setTaskTheme("bg-yellow-100")}
+                className="w-2 h-2 bg-yellow-100 border border-black cursor-pointer"
+              ></div>
+              <div
+                onClick={() => setTaskTheme("bg-green-200")}
+                className="w-2 h-2 bg-green-200 border border-black cursor-pointer"
+              ></div>
+              <div
+                onClick={() => setTaskTheme("bg-blue-200")}
+                className="w-2 h-2 bg-blue-200 border border-black cursor-pointer"
+              ></div>
+              <div
+                onClick={() => setTaskTheme("bg-indigo-200")}
+                className="w-2 h-2 bg-indigo-200 border border-black cursor-pointer"
+              ></div>
+              <div
+                onClick={() => setTaskTheme("bg-violet-200")}
+                className="w-2 h-2 bg-violet-200 border border-black cursor-pointer"
+              ></div>
+            </div>
+          </div>
         </form>
       </div>
     </>
