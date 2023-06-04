@@ -68,6 +68,7 @@ export default function LeftDesktopNav({
       >
         <img
           src="https://win98icons.alexmeub.com/icons/png/notepad-5.png"
+          // src="https://win98icons.alexmeub.com/icons/png/template_empty-5.png"
           alt="todo"
           width={"28px"}
           title="Todo List"

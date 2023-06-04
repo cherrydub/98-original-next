@@ -1,10 +1,9 @@
 "use client";
+
 import { useState } from "react";
 import BottomDesktopBar from "./BottomDesktopBar";
 import LeftDesktopNav from "./LeftDesktopNav";
 import MainDesktop from "./MainDesktop";
-
-// import BackgroundChanger from "./components/BackgroundChanger";
 
 export default function Home() {
   const [activeComponents, setActiveComponents] = useState(["Welcome"]);
@@ -26,7 +25,6 @@ export default function Home() {
 
   return (
     <div className={`${backgroundChoice}`} style={{ height: "100svh" }}>
-      {/* <BackgroundChanger /> */}
       <LeftDesktopNav
         activeComponents={activeComponents}
         addActiveComponent={addActiveComponent}

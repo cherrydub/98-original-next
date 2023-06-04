@@ -1,30 +1,37 @@
 import React, { useState, useEffect } from "react";
-
+import {
+  fetchBitcoinPrice,
+  fetchEthereumPrice,
+} from "../components/cryptoPrices";
 import LastGitPush from "../components/LastGitPush";
 
 export default function WelcomeContent() {
-  const [btcPrice, setBtcPrice] = useState(null);
-  const [ethPrice, setEthPrice] = useState(null);
-  const [lastPushTime, setLastPushTime] = useState(null);
+  const [btcPrice, setBtcPrice] = useState("$$$");
+  const [ethPrice, setEthPrice] = useState("$$$");
+  const [lastPushTime, setLastPushTime] = useState("Loading...");
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
-      .then((response) => response.json())
-      .then((data) => data.bpi.USD.rate_float)
-      .then((float) => float.toFixed(0))
-      .then((fixed) => setBtcPrice(fixed));
+    const fetchData = async () => {
+      try {
+        const btcPrice = await fetchBitcoinPrice();
+        const ethPrice = await fetchEthereumPrice();
+        const pushTime = await LastGitPush();
 
-    fetch(
-      "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
-    )
-      .then((response) => response.json())
-      .then((data) => data.ethereum.usd)
-      .then((rate) => setEthPrice(rate.toFixed(0)));
+        setBtcPrice(btcPrice);
+        setEthPrice(ethPrice);
+        setLastPushTime(pushTime);
+      } catch (error) {
+        setError("Error occurred while fetching data.");
+      }
+    };
 
-    LastGitPush().then((time) => {
-      setLastPushTime(time);
-    });
+    fetchData();
   }, []);
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="text-whitefont-bold cursor-not-allowed">
@@ -33,8 +40,7 @@ export default function WelcomeContent() {
           <div className="flex">
             <div className="flex-initial">cherrydub©</div>
             <div className="flex-grow text-right">
-              ₿: ${btcPrice !== null ? btcPrice : "Loading..."} Ξ: $
-              {ethPrice !== null ? ethPrice : "Loading..."}
+              ₿: {btcPrice} Ξ: {ethPrice}
               {ethPrice > 1800 && btcPrice > 27000 ? " 🙂" : " 🙃"}
             </div>
           </div>
@@ -42,11 +48,11 @@ export default function WelcomeContent() {
           <div className="flex">
             <div className="flex-initial">Latest push:</div>
             <div className="flex-grow text-right">
-              {lastPushTime !== null
-                ? lastPushTime.split("T")[0] +
-                  " @ " +
-                  lastPushTime.split("T")[1]
-                : "Loading..."}{" "}
+              {lastPushTime
+                ? `${lastPushTime.split("T")[0]} @ ${
+                    lastPushTime.split("T")[1]
+                  }`
+                : "Loading..."}
             </div>
           </div>
         </div>
