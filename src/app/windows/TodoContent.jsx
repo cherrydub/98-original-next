@@ -62,7 +62,7 @@ export default function TodoContent({ setTaskTheme }) {
 
         <form onSubmit={handleAddTask}>
           <div className="flex">
-            <div>
+            <div className="flex flex-grow">
               {" "}
               <input
                 className=""
@@ -76,7 +76,7 @@ export default function TodoContent({ setTaskTheme }) {
               </button>
             </div>
 
-            <div className="flex flex-row flex-grow justify-around items-center">
+            <div className="flex flex-row justify-around items-center">
               <div
                 onClick={() => setTaskTheme("bg-red-200")}
                 className="w-2 h-2 bg-red-200 border border-black cursor-pointer m-1"
