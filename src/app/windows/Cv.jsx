@@ -1,5 +1,7 @@
 import React from "react";
 import CvContent from "./CvContent";
+import floppy from "../../../public/icons/floppy-disk-dark.svg";
+import printer from "../../../public/icons/16x16/printer-1.png";
 
 export default function Cv({ activeComponents, removeActiveComponent }) {
   const handleLinkClick = (event) => {
@@ -9,6 +11,13 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
   };
 
   const handleSizeClick = () => {};
+
+  const handlePrintClick = () => {
+    window.open(
+      "https://raw.githubusercontent.com/cherrydub/cherrydub/main/ChrisWisniewskiCV.pdf",
+      "_blank"
+    );
+  };
 
   const isActive =
     (activeComponents ?? []).length > 0 && activeComponents[0] === "Cv";
@@ -44,8 +53,36 @@ export default function Cv({ activeComponents, removeActiveComponent }) {
             ></button>
           </div>
         </div>
+
         <div className="window-body">
           <CvContent />
+        </div>
+        <div className="status-bar">
+          <span className="status-bar-field text-center">
+            <a href="https://raw.githubusercontent.com/cherrydub/cherrydub/main/ChrisWisniewskiCV.pdf">
+              <img className="inline" src={floppy.src} width={"16px"} alt="" />
+            </a>
+          </span>
+          <span className="status-bar-field text-center">
+            <img
+              onClick={handlePrintClick}
+              className="inline hover:cursor-pointer"
+              src={printer.src}
+              alt=""
+            />
+          </span>
+          <span className="status-bar-field text-center">
+            <a
+              target="_blank"
+              href="https://github.com/cherrydub/cherrydub/blob/main/ChrisWisniewskiCV.pdf"
+            >
+              <img
+                className="inline"
+                src="https://win98icons.alexmeub.com/icons/png/directory_e-3.png"
+                alt=""
+              />
+            </a>
+          </span>
         </div>
       </div>
     </div>
