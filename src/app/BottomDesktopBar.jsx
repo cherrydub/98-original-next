@@ -128,7 +128,7 @@ export default function BottomDesktopBar({
               />
               <img
                 className="inline mr-1 hover:opacity-50"
-                onClick={() => handleLinkClick("Timer")}
+                // onClick={() => handleLinkClick("Timer")}
                 src="https://win98icons.alexmeub.com/icons/png/time_and_date-1.png"
                 alt=""
                 width="14px"
