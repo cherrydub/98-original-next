@@ -247,7 +247,7 @@ export default function CvContent() {
           pursue a career that would highlight my strengths
         </p>
         <br />
-        <p className="italic">SEPT 2003 - JUNE 2004</p>
+        <p className="italic">SEPT 2003 - JUNE 2007</p>
         <p className="font-bold">Linden High School, New Jersey USA</p>
       </div>
     </div>
