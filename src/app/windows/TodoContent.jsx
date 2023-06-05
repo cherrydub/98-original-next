@@ -67,6 +67,7 @@ export default function TodoContent({ setTaskTheme }) {
                 className="flex-grow"
                 type="text"
                 placeholder="add task"
+                // style={{ background: "transparent" }}
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
               />

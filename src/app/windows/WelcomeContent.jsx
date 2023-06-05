@@ -4,6 +4,7 @@ import {
   fetchEthereumPrice,
 } from "../components/cryptoPrices";
 import LastGitPush from "../components/LastGitPush";
+import ESTtime from "../components/ESTtime";
 
 export default function WelcomeContent() {
   const [btcPrice, setBtcPrice] = useState("$$$");
@@ -22,7 +23,7 @@ export default function WelcomeContent() {
         setEthPrice(ethPrice);
         setLastPushTime(pushTime);
       } catch (error) {
-        setError("Error occurred while fetching data.");
+        setError("Error occurred while fetching data.", error);
       }
     };
 
@@ -44,13 +45,16 @@ export default function WelcomeContent() {
               {ethPrice > 1800 && btcPrice > 27000 ? " 🙂" : " 🙃"}
             </div>
           </div>
-
+          <div className="text-left">
+            <ESTtime />
+          </div>
+          <br />
           <div className="flex">
             <div className="flex-initial">Latest push:</div>
             <div className="flex-grow text-right">
               {lastPushTime
                 ? `${lastPushTime.split("T")[0]} @ ${
-                    lastPushTime.split("T")[1]
+                    lastPushTime.split("T")[1].substring(0, 5) + " UTC"
                   }`
                 : "Loading..."}
             </div>
