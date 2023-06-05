@@ -7,9 +7,9 @@ import LastGitPush from "../components/LastGitPush";
 import ESTtime from "../components/ESTtime";
 
 export default function WelcomeContent() {
-  const [btcPrice, setBtcPrice] = useState("$$$");
-  const [ethPrice, setEthPrice] = useState("$$$");
-  const [lastPushTime, setLastPushTime] = useState("Loading...");
+  const [btcPrice, setBtcPrice] = useState(null);
+  const [ethPrice, setEthPrice] = useState(null);
+  const [lastPushTime, setLastPushTime] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
