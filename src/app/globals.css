@@ -81,6 +81,62 @@ body {
   background-size: auto 100vh;
 }
 
+.background-pepe3 {
+  background-image: url("/backgrounds/pepe3.png");
+  background-repeat: repeat;
+  background-position: right;
+  background-size: auto 100vh;
+}
+
+.background-98-sky-logo {
+  background-image: url("/backgrounds/98-sky-logo.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.background-98-cougar {
+  background-image: url("/backgrounds/98-cougar.png");
+  background-repeat: repeat;
+  background-position: right;
+  background-size: auto 100vh;
+}
+
+.background-98-leopard {
+  background-image: url("/backgrounds/98-leopard.jpg");
+  /* background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh; */
+}
+
+.background-98-space {
+  background-image: url("/backgrounds/98-space.jpg");
+  /* background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh; */
+}
+
+.background-98-ocean {
+  background-image: url("/backgrounds/98-ocean.jpg");
+  /* background-repeat: repeat;
+  background-position: left;
+  background-size: auto 100vh; */
+}
+
+.background-98-computer {
+  background-image: url("/backgrounds/98-computer.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh;
+}
+
+.background-xp-classic {
+  background-image: url("/backgrounds/xp-classic.jpg");
+  /* background-repeat: repeat;
+  background-position: center;
+  background-size: auto 100vh; */
+}
+
 @keyframes blink {
   0% {
     opacity: 1;
