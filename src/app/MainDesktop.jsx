@@ -47,7 +47,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "absolute pl-14 w-full top-1/4"; // UPDATING THIS SO MAYBE USE PADDING INSTAED OF MARGIN FOR RESIZING
+              containerClassName = "absolute pl-14 top-1/4"; // UPDATING THIS SO MAYBE USE PADDING INSTAED OF MARGIN FOR RESIZING
               break;
             case "Cv":
               component = (

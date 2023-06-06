@@ -47,7 +47,7 @@ export default function Projects({ activeComponents, removeActiveComponent }) {
               aria-label="Minimize"
             ></button>
             <button
-              onClick={handleMaxRestore}
+              // onClick={handleMaxRestore}
               className="bg-gray-300"
               aria-label="Maximize"
             ></button>
