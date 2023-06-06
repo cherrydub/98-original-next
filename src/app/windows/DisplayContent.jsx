@@ -5,6 +5,7 @@ export default function DisplayContent({
   setBackgroundChoice,
 }) {
   const handleBackgroundChange = (event) => {
+    event.preventDefault();
     setBackgroundChoice(event.target.value);
   };
 
@@ -13,7 +14,7 @@ export default function DisplayContent({
       <p>Update background:</p>
       <select
         className="pr-5 pl-2"
-        value="null"
+        value={backgroundChoice}
         onChange={handleBackgroundChange}
       >
         <option value="background-default">Default: Green</option>

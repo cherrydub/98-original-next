@@ -2,20 +2,27 @@ import React, { useState } from "react";
 import ProjectsContent from "./ProjectsContent";
 
 export default function Projects({ activeComponents, removeActiveComponent }) {
-  // const [windowSize, setWindowSize] = useState(null);
+  const [windowSize, setWindowSize] = useState(null);
 
   const handleLinkClick = (event) => {
     event.stopPropagation();
     removeActiveComponent("Projects");
   };
 
-  // const handleMaxRestore = () => {
-  //   if (windowSize === null) {
-  //     setWindowSize("h-screen w-screen top-0");
-  //   } else {
-  //     setWindowSize(null);
-  //   }
-  // };
+  const handleMaxRestore = () => {
+    console.log("clickeddddddd max");
+    if (windowSize === null) {
+      setWindowSize({
+        width: "100dvw",
+        height: "100dvh",
+        position: "fixed",
+        top: 0,
+        left: 0,
+      });
+    } else {
+      setWindowSize(null);
+    }
+  };
 
   const isActive =
     (activeComponents ?? []).length > 0 && activeComponents[0] === "Projects";
@@ -23,8 +30,7 @@ export default function Projects({ activeComponents, removeActiveComponent }) {
 
   return (
     <div className="">
-      {/* <div className={`${windowSize} window inline-flex flex-col`}> */}
-      <div className="window inline-flex flex-col">
+      <div className="window inline-flex flex-col" style={windowSize}>
         <div className={titleBarClassName}>
           <div className="title-bar-text flex cursor-default">
             <img
@@ -40,7 +46,11 @@ export default function Projects({ activeComponents, removeActiveComponent }) {
               className="bg-gray-300 btn hover:bg-gray-100"
               aria-label="Minimize"
             ></button>
-            <button className="bg-gray-300" aria-label="Maximize"></button>
+            <button
+              onClick={handleMaxRestore}
+              className="bg-gray-300"
+              aria-label="Maximize"
+            ></button>
             <button
               onClick={handleLinkClick}
               className="bg-gray-300 btn hover:bg-gray-100"

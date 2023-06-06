@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function ESTtime() {
-  const [time, setTime] = useState("loading"); // Set initial state to 'loading'
+  const [time, setTime] = useState(null);
   const [dayWeek, setDayWeek] = useState(null);
   const [dayYear, setDayYear] = useState(null);
 
@@ -15,7 +15,7 @@ export default function ESTtime() {
         const datetime = data.datetime;
         const dayweek = data.day_of_week;
         const dayyear = data.day_of_year;
-        setTime(datetime); // Update state with fetched time
+        setTime(datetime);
         setDayWeek(dayweek);
         setDayYear(dayyear);
       } catch (error) {
@@ -26,15 +26,15 @@ export default function ESTtime() {
     fetchTime();
 
     const interval = setInterval(() => {
-      fetchTime(); // Fetch time periodically
+      fetchTime();
     }, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
   // Display loading state until time is fetched
-  if (time === "loading") {
-    return <div>Loading...</div>;
+  if (!time) {
+    return <div>Loading... </div>;
   }
 
   const formattedTime = time.split("T")[1].substring(0, 5);

@@ -33,12 +33,10 @@ export default function MainDesktop({
 
   return (
     <div className="">
-      {/* <SpeechRecognition onTranscript={handleTranscript} />
-      <ChatGPT prompt={transcript} /> */}
       <div className="">
         {activeComponents.map((componentName, index) => {
           let component = null;
-          let containerClassName = "ml-14 absolute"; // Default container class name
+          let containerClassName = "pl-14 absolute"; // Default container class name
 
           switch (componentName) {
             case "Projects":
@@ -49,7 +47,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 top-1/4 absolute"; // Positioning for Projects component
+              containerClassName = "absolute pl-14 w-full top-1/4"; // UPDATING THIS SO MAYBE USE PADDING INSTAED OF MARGIN FOR RESIZING
               break;
             case "Cv":
               component = (
@@ -59,7 +57,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 absolute"; // Positioning for Cv component
+              containerClassName = "pl-14 absolute"; // Positioning for Cv component
               break;
             case "Todo":
               component = (
@@ -79,7 +77,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 top-3/4 absolute"; // Centering for Memes component
+              containerClassName = "pl-14 top-3/4 absolute"; // Centering for Memes component
               break;
             case "IE":
               component = (
@@ -89,7 +87,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 absolute"; // Positioning for Cv component
+              containerClassName = "pl-14 absolute"; // Positioning for Cv component
               break;
             case "Display":
               component = (
@@ -101,7 +99,7 @@ export default function MainDesktop({
                   setBackgroundChoice={setBackgroundChoice}
                 />
               );
-              containerClassName = "ml-14 bottom-1/2 right-1/2 absolute"; // Positioning for Cv component
+              containerClassName = "pl-14 bottom-1/2 right-1/2 absolute"; // Positioning for Cv component
               break;
             case "Contact":
               component = (
@@ -121,7 +119,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "ml-14 mt-12 absolute"; // Positioning for Timer component
+              containerClassName = "pl-14 mt-12 absolute"; // Positioning for Timer component
               break;
             default:
               component = (
