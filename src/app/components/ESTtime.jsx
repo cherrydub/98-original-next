@@ -78,7 +78,7 @@ export default function ESTtime() {
   }
 
   //if during opening times on weekday
-  if (formattedTime > openingTime && formattedTime < closingTime) {
+  if (formattedTime >= openingTime && formattedTime < closingTime) {
     return (
       <div className="flex">
         <div className="flex-initial">
