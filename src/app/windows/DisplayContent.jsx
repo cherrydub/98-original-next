@@ -45,12 +45,14 @@ export default function DisplayContent({
           </>
         ) : (
           <>
-            <option value="background-98-sky-logo">98-Sky</option>
+            <option value="background-pepe1">Pepe 1</option>
+            <option value="background-pepe3">Pepe 2</option>
+            {/* <option value="background-98-sky-logo">98-Sky</option> */}
             <option value="background-98-cougar">98-Cougar</option>
-            <option value="background-98-leopard">98-Leopard</option>
+            {/* <option value="background-98-leopard">98-Leopard</option>
             <option value="background-98-space">98-Space</option>
             <option value="background-98-ocean">98-Ocean</option>
-            <option value="background-98-computer">98-Computer</option>
+            <option value="background-98-computer">98-Computer</option> */}
             <option value="background-xp-classic">XP-Classic</option>
           </>
         )}
