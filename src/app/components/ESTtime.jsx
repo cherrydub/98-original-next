@@ -101,6 +101,18 @@ export default function ESTtime() {
     );
   }
 
+  //friday before opening time
+  if (dayWeek === 5 && formattedTime < openingTime) {
+    return (
+      <div className="flex">
+        <div className="flex-initial">
+          {formattedTime} NYC <span className="text-red-600">Closed</span>
+        </div>
+        <div className="flex-grow text-right">Opens 09:30 NYC</div>
+      </div>
+    );
+  }
+
   //everything else
   return (
     <div className="flex">
