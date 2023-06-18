@@ -42,7 +42,7 @@ export default function TodoContent({ setTaskTheme }) {
             {tasks.map((task, index) => (
               <li
                 key={index}
-                className="border-b border-black"
+                className="border-b border-blue-700"
                 style={{}}
                 onClick={() => handleTaskClick(index)}
                 onMouseEnter={(e) => {

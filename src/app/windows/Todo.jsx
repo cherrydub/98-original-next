@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoContent from "./TodoContent";
 
 export default function Todo({ activeComponents, removeActiveComponent }) {
-  const [taskTheme, setTaskTheme] = useState("bg-yellow-100");
+  const [taskTheme, setTaskTheme] = useState("bg-white");
   const handleLinkClick = (event) => {
     //this prevents any background event clickers to work, such as removing and readding the active component
     event.stopPropagation();

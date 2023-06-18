@@ -65,8 +65,10 @@ export default function ESTtime() {
     );
   }
 
+  console.log("day week:", dayWeek);
+
   //if saturday or sunday
-  if (dayWeek > 5) {
+  if (dayWeek === 6 || dayWeek === 0) {
     return (
       <div className="flex">
         <div className="flex-initial">
