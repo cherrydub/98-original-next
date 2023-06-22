@@ -42,10 +42,10 @@ export default function WelcomeContent() {
             <div className="flex-initial">cherrydub©</div>
 
             <div className="flex-grow text-right">
-              <a href="https://crypto1.cherrydub.com/" target="_blank">
-                ₿: {btcPrice} Ξ: {ethPrice}
-                {ethPrice > 1800 && btcPrice > 27000 ? " 🙂" : " 🙃"}
-              </a>
+              {/* <a href="https://crypto1.cherrydub.com/" target="_blank"> */}
+              ₿: {btcPrice} Ξ: {ethPrice}
+              {ethPrice > 1800 && btcPrice > 27000 ? " 🙂" : " 🙃"}
+              {/* </a> */}
             </div>
           </div>
           <div className="text-left">

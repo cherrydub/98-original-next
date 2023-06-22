@@ -26,7 +26,10 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
             C:\WINDOWS\System32.cmd.exe
           </div>
           <div className="title-bar-controls">
-            <button className="bg-gray-300" aria-label="Help"></button>
+            <a href="https://crypto1.cherrydub.com/" target="_blank">
+              <button className="bg-gray-300" aria-label="Help"></button>
+            </a>
+
             <button
               onClick={handleLinkClick}
               className="bg-gray-300 btn hover:bg-gray-100"
