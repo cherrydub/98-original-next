@@ -13,6 +13,16 @@ export default function ProjectsContent() {
         </div>
       </a>
 
+      <a target="_blank" href="https://crypto1.cherrydub.com/">
+        <div className="flex flex-col items-center overflow-auto">
+          <img
+            src="https://win98icons.alexmeub.com/icons/png/html-5.png"
+            alt=""
+          />
+          <div className="text-center">Crypto App</div>
+        </div>
+      </a>
+
       <a target="_blank" href="https://pokedex.cherrydub.com/">
         <div className="flex flex-col items-center">
           <img
