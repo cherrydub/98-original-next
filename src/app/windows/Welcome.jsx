@@ -27,7 +27,10 @@ export default function Welcome({ activeComponents, removeActiveComponent }) {
           </div>
           <div className="title-bar-controls">
             <a href="https://crypto1.cherrydub.com/" target="_blank">
-              <button className="bg-gray-300" aria-label="Help"></button>
+              <button
+                className="bg-gray-300 btn hover:bg-gray-100"
+                aria-label="Help"
+              ></button>
             </a>
 
             <button
