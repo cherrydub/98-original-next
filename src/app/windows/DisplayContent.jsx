@@ -38,7 +38,7 @@ export default function DisplayContent({
         {isMobile ? (
           <>
             <option value="background-pepe1">Pepe 1</option>
-            <option value="background-pepe3">Pepe 2</option>
+            {/* <option value="background-pepe3">Pepe 2</option> */}
             <option value="background-ashpika">Pokemon</option>
             <option value="background-dbz1">DragonBall Z</option>
             <option value="background-robocop">Robocop</option>
@@ -47,7 +47,7 @@ export default function DisplayContent({
         ) : (
           <>
             <option value="background-pepe1">Pepe 1</option>
-            <option value="background-pepe3">Pepe 2</option>
+            {/* <option value="background-pepe3">Pepe 2</option> */}
             <option value="background-default">Classic: Green</option>
             {/* <option value="background-98-sky-logo">98-Sky</option> */}
             {/* <option value="background-98-cougar">98-Cougar</option> */}
