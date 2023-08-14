@@ -10,8 +10,7 @@ export default function Home() {
     "Welcome",
     "Display",
   ]);
-  const [backgroundChoice, setBackgroundChoice] =
-    useState("background-default");
+  const [backgroundChoice, setBackgroundChoice] = useState("background-pepe3");
 
   const addActiveComponent = (componentName) => {
     setActiveComponents((prevActiveComponents) => [
