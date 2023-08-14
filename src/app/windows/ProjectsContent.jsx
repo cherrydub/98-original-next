@@ -23,13 +23,13 @@ export default function ProjectsContent() {
         </div>
       </a>
 
-      <a target="_blank" href="https://pokedex.cherrydub.com/">
+      <a target="_blank" href="https://popcorntime.cherrydub.com/">
         <div className="flex flex-col items-center">
           <img
             src="https://win98icons.alexmeub.com/icons/png/html-5.png"
             alt=""
           />
-          <div className="text-center">Pokedex</div>
+          <div className="text-center">Popcorn Time</div>
         </div>
       </a>
 
