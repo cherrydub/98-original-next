@@ -151,7 +151,7 @@ export default function CvContent() {
           <li className="">
             <a
               className="inline font-bold text-blue-600"
-              href="https://pokedex.cherrydub.com/"
+              href="https://popcorntime.cherrydub.com/"
               target="_blank"
             >
               <img
@@ -160,15 +160,16 @@ export default function CvContent() {
                 alt=""
                 width={"15px"}
               />
-              Pokedex
+              Popcorn Time
             </a>
-            - fetching using pokedex API
+            - Public API to display movies, add movies using LocalStorage,
+            reusable components
           </li>
 
           <li className="">
             <a
               className="inline font-bold text-blue-600"
-              href="https://ncgames.cherrydub.com/"
+              href="https://crypto1.cherrydub.com/"
               target="_blank"
             >
               <img
@@ -177,9 +178,9 @@ export default function CvContent() {
                 alt=""
                 width={"15px"}
               />
-              NC Games
+              Crypto Tracker
             </a>
-            - Frontend and Backend/Database project
+            - Live crypto app fetching data from CoinGecko
           </li>
         </ul>
         <br />
@@ -211,7 +212,7 @@ export default function CvContent() {
           the tech industry and make a meaningful impact
         </p>
         <br />
-        <p className="italic">JULY 2018 - OCT 2021</p>
+        <p className="italic">JULY 2018 - OCT 2022</p>
         <p className="font-bold">Mac-Seven - IT Consultant</p>
         <p>
           -Worked as an IT consultant with a range of clients across various
