@@ -161,7 +161,7 @@ export default function LeftDesktopNav({
         </a>
       </div>
 
-      <div
+      {/* <div
         className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Memes") ? "active" : ""
         }`}
@@ -175,7 +175,7 @@ export default function LeftDesktopNav({
           title="Lulz"
         />
         <p className="text-white text-shadow-black">Memes</p>
-      </div>
+      </div> */}
     </div>
   );
 }
