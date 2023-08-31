@@ -81,6 +81,7 @@ export default function ContactForm({ removeActiveComponent }) {
             <div className="flex mt-1">
               <a className="text-blue-700" href="mailto:chriscoding@icloud.com">
                 <button
+                  type="button"
                   style={{ width: "50px" }}
                   className="hover:bg-gray-100 flex items-center justify-center ml-auto"
                 >
