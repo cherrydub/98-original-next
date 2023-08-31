@@ -19,7 +19,7 @@ export default function BottomDesktopBar({
 
   const icons = {
     Welcome: "https://win98icons.alexmeub.com/icons/png/console_prompt-1.png",
-    Contact: "https://win98icons.alexmeub.com/icons/png/message_file-1.png",
+    Contact: "https://win98icons.alexmeub.com/icons/png/outlook_express-2.png",
     Cv: "https://win98icons.alexmeub.com/icons/png/message_file-1.png",
     IE: "https://win98icons.alexmeub.com/icons/png/message_file-1.png",
     Memes: "https://win98icons.alexmeub.com/icons/png/briefcase-1.png",

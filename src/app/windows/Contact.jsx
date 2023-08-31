@@ -25,7 +25,7 @@ export default function Contact({ activeComponents, removeActiveComponent }) {
           <div className="title-bar-text flex cursor-default">
             <img
               className="btn pr-1"
-              src="https://win98icons.alexmeub.com/icons/png/message_file-1.png"
+              src="https://win98icons.alexmeub.com/icons/png/outlook_express-2.png"
               alt=""
             />
             Contact
