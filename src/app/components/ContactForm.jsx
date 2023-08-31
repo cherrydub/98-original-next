@@ -32,8 +32,11 @@ export default function ContactForm({ removeActiveComponent }) {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col p-1">
-          <label htmlFor="name">Name:</label>
+          <label className="font-bold" htmlFor="name">
+            Name:
+          </label>
           <input
+            placeholder="Steve Jobs"
             id="name"
             type="text"
             name="name"
@@ -42,11 +45,21 @@ export default function ContactForm({ removeActiveComponent }) {
             }}
           />
 
-          <label htmlFor="email">Email:</label>
-          <input id="email" type="email" name="email" />
+          <label className="font-bold" htmlFor="email">
+            Email:
+          </label>
+          <input
+            placeholder="steve@apple.com"
+            id="email"
+            type="email"
+            name="email"
+          />
 
-          <label htmlFor="message">Message:</label>
+          <label className="font-bold" htmlFor="message">
+            Message:
+          </label>
           <textarea
+            placeholder="Hi there! We'd love to hire you!"
             id="message"
             name="message"
             className="h-40 resize-y p-2"

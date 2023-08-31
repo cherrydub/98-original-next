@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 
 export default function ContactContent({ removeActiveComponent }) {
   return (
-    <div className=" bg-white flex flex-col p-4">
+    <div className="flex flex-col p-2">
       <ContactForm removeActiveComponent={removeActiveComponent} />
       <p className="text-center font-bold flex justify-center">
         <a href="mailto:chriscoding@icloud.com">

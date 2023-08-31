@@ -45,7 +45,9 @@ export default function Contact({ activeComponents, removeActiveComponent }) {
           </div>
         </div>
         <div className="window-body">
-          <ContactContent removeActiveComponent={removeActiveComponent} />
+          <div className="bg-white border-l border-t border-gray-500">
+            <ContactContent removeActiveComponent={removeActiveComponent} />
+          </div>
         </div>
       </div>
     </div>
