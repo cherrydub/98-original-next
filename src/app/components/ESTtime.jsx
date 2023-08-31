@@ -27,7 +27,7 @@ export default function ESTtime() {
 
     const interval = setInterval(() => {
       fetchTime();
-    }, 1000);
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);

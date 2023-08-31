@@ -134,7 +134,7 @@ export default function LeftDesktopNav({
         <p className="">Misc</p>
       </div> */}
 
-      {/* <div
+      <div
         className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
           activeComponents.includes("Contact") ? "active" : ""
         }`}
@@ -146,9 +146,9 @@ export default function LeftDesktopNav({
           width={"28px"}
         />
         <p className="">Contact</p>
-      </div> */}
+      </div>
 
-      <div className=" mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
+      {/* <div className=" mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ">
         <a href="mailto:chriscoding@icloud.com">
           <img
             className="mx-auto"
@@ -159,7 +159,7 @@ export default function LeftDesktopNav({
           />
           <p className="text-white text-shadow-black">Contact</p>
         </a>
-      </div>
+      </div> */}
 
       {/* <div
         className={`mb-2 text-center flex flex-col items-center hover:bg-white hover:bg-opacity-25 p-1 cursor-pointer ${
