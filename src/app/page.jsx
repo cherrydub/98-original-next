@@ -12,6 +12,12 @@ export default function Home() {
   ]);
   const [backgroundChoice, setBackgroundChoice] = useState("background-pepe3");
 
+  // const handleContactFormClose = (componentName) => {
+  //   setActiveComponents((prevActiveComponents) =>
+  //     prevActiveComponents.filter((name) => name !== componentName)
+  //   );
+  // };
+
   const addActiveComponent = (componentName) => {
     setActiveComponents((prevActiveComponents) => [
       componentName,
