@@ -109,7 +109,7 @@ export default function MainDesktop({
                   removeActiveComponent={removeActiveComponent}
                 />
               );
-              containerClassName = "left-1/4 top-1/4 absolute"; // Positioning for Cv component
+              containerClassName = "ml-14 top-1/4 absolute"; // Positioning for Cv component
               break;
             case "Timer":
               component = (
