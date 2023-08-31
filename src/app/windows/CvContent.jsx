@@ -239,7 +239,7 @@ export default function CvContent() {
         </p>
         <br />
         <p className="font-bold underline  text-lg">Education</p>
-        <p className="italic">SEPT 2007 - JUNE 2001</p>
+        <p className="italic">SEPT 2007 - JUNE 2011</p>
         <p className="font-bold">
           Stevens Institute of Tech, New Jersey USA - Mechanical Engineering
         </p>
