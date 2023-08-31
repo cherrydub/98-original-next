@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 export default function TodoContent({ setTaskTheme }) {
   const [tasks, setTasks] = useState([
-    "Finish memes dynamic listing",
-    "Make contact page",
-    "Fix status bar squish on mobile, right-side component especially",
-    "Personal 98 login for diff desktops",
-    "Allow additional todo's and notes",
+    "supbase logins",
+    "CV update",
+    "modern homepage",
+    "send out cv's",
+    "get hired",
   ]);
   const [newTask, setNewTask] = useState("");
 
@@ -66,19 +66,19 @@ export default function TodoContent({ setTaskTheme }) {
               <input
                 className="flex-grow"
                 type="text"
-                placeholder="add task"
+                placeholder="task"
                 // style={{ background: "transparent" }}
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
               />
-              <button className="bg-gray-300" type="submit">
+              <button className="font-bold bg-gray-300" type="submit">
                 +
               </button>
             </div>
           </div>
         </form>
 
-        <div>
+        {/* <div>
           <div className="flex flex-row flex-grow justify-around items-center">
             <div
               onClick={() => setTaskTheme("bg-red-200")}
@@ -109,7 +109,7 @@ export default function TodoContent({ setTaskTheme }) {
               className="w-2 h-2 bg-violet-200 border border-black cursor-pointer"
             ></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
