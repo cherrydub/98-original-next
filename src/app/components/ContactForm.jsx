@@ -47,6 +47,7 @@ export default function ContactForm({ removeActiveComponent }) {
             </label>
             <input
               // placeholder="name"
+              required
               id="name"
               type="text"
               name="name"
@@ -60,6 +61,7 @@ export default function ContactForm({ removeActiveComponent }) {
             </label>
             <input
               // placeholder="your e-mail"
+              required
               id="email"
               type="email"
               name="email"
@@ -69,6 +71,7 @@ export default function ContactForm({ removeActiveComponent }) {
               Message:
             </label>
             <textarea
+              required
               // placeholder="message"
               id="message"
               name="message"
