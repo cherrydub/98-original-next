@@ -111,7 +111,7 @@ export default function LeftDesktopNav({
             src="https://win98icons.alexmeub.com/icons/png/msie1-2.png"
             alt="GitHub"
             width={"28px"}
-            title="Cherrydub"
+            title="Cherrydub GitHub"
           />
           <p className="text-white text-shadow-black">GitHub</p>
         </a>
@@ -144,6 +144,7 @@ export default function LeftDesktopNav({
           src="https://win98icons.alexmeub.com/icons/png/outlook_express-4.png"
           alt="email"
           width={"28px"}
+          title="Contact"
         />
         <p className="">Contact</p>
       </div>
